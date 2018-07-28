@@ -1,58 +1,53 @@
-2018-07-28T03:36:46.575Z - normal: Load ~/.CocosCreator/settings.json
-2018-07-28T03:36:46.578Z - normal: checking language setting...
-2018-07-28T03:36:46.579Z - normal: Language: zh
-2018-07-28T03:36:47.434Z - success: protocol editor-framework registered
-2018-07-28T03:36:47.434Z - success: protocol app registered
-2018-07-28T03:36:47.435Z - success: protocol theme registered
-2018-07-28T03:36:47.435Z - success: protocol packages registered
-2018-07-28T03:36:47.435Z - success: protocol unpack registerred
-2018-07-28T03:36:47.436Z - success: protocol disable-commonjs registerred
-2018-07-28T03:36:47.522Z - normal: connected!
-2018-07-28T03:36:47.535Z - normal: Check project /Users/yangyu/Documents/GitHub/qqt
-2018-07-28T03:36:47.537Z - normal: Initializing Cocos2d
-2018-07-28T03:36:47.767Z - normal: Initializing Asset Database
-2018-07-28T03:36:47.803Z - success: protocol uuid registerred
-2018-07-28T03:36:47.803Z - success: protocol db registerred
-2018-07-28T03:36:47.803Z - success: protocol thumbnail registerred
-2018-07-28T03:36:47.804Z - normal: Loading editor/builtin packages
-2018-07-28T03:36:47.828Z - success: anysdk loaded
-2018-07-28T03:36:47.953Z - success: assets loaded
-2018-07-28T03:36:47.957Z - success: builder loaded
-2018-07-28T03:36:47.959Z - success: cocos-analytics loaded
-2018-07-28T03:36:47.964Z - success: console loaded
-2018-07-28T03:36:47.995Z - success: fb-instant-games loaded
-2018-07-28T03:36:48.000Z - success: hierarchy loaded
-2018-07-28T03:36:48.005Z - success: inspector loaded
-2018-07-28T03:36:48.007Z - success: keystore loaded
-2018-07-28T03:36:48.015Z - success: node-library loaded
-2018-07-28T03:36:48.017Z - success: package-asset loaded
-2018-07-28T03:36:48.020Z - success: preferences loaded
-2018-07-28T03:36:48.023Z - success: project-exporter loaded
-2018-07-28T03:36:48.040Z - success: project-importer loaded
-2018-07-28T03:36:48.043Z - success: project-settings loaded
-2018-07-28T03:36:48.048Z - success: ui-kit loaded
-2018-07-28T03:36:48.052Z - success: ui-grid loaded
-2018-07-28T03:36:48.057Z - success: scene loaded
-2018-07-28T03:36:48.059Z - success: sprite-editor loaded
-2018-07-28T03:36:48.063Z - success: store loaded
-2018-07-28T03:36:48.069Z - success: timeline loaded
-2018-07-28T03:36:48.070Z - normal: Loading builtin packages
-2018-07-28T03:36:48.074Z - success: asset-db-debugger loaded
-2018-07-28T03:36:48.075Z - success: color-picker loaded
-2018-07-28T03:36:48.079Z - success: package-manager loaded
-2018-07-28T03:36:48.084Z - success: sdkbox loaded
-2018-07-28T03:36:48.090Z - success: tester loaded
-2018-07-28T03:36:48.094Z - success: ui-kit-preview-extra loaded
-2018-07-28T03:36:48.097Z - success: ui-kit-preview loaded
-2018-07-28T03:36:48.100Z - success: ui-tree loaded
-2018-07-28T03:36:49.154Z - normal: Initializing project /Users/yangyu/Documents/GitHub/qqt
-2018-07-28T03:36:49.156Z - normal: Loading packages
-2018-07-28T03:36:49.163Z - normal: Watching packages
-2018-07-28T03:36:49.174Z - normal: Run Application
-2018-07-28T03:36:49.720Z - success: preview server running at http://localhost:7456
-2018-07-28T03:36:54.854Z - normal: 1.9.1
-2018-07-28T03:37:08.200Z - success: VS Code extension installed to /Users/yangyu/.vscode/extensions
-2018-07-28T03:37:23.023Z - success: VS Code extension installed to /Users/yangyu/.vscode/extensions
-2018-07-28T03:38:11.164Z - success: API data generated and copied to /Users/yangyu/Documents/GitHub/qqt/creator.d.ts
-2018-07-28T03:44:22.126Z - success: Compiling task has been added to .vscode/tasks.json, please run "compile" task in VS Code to trigger compile in Cocos Creator.
-2018-07-28T03:47:13.834Z - success: Chrome debug setting has been updated to .vscode/launch.json, please install Debugger for Chrome VS Code extension to debug your project.
+2018-07-28T03:58:57.279Z - normal: Load ~/.CocosCreator/settings.json
+2018-07-28T03:58:57.283Z - normal: checking language setting...
+2018-07-28T03:58:57.283Z - normal: Language: zh
+2018-07-28T03:58:58.114Z - success: protocol editor-framework registered
+2018-07-28T03:58:58.114Z - success: protocol app registered
+2018-07-28T03:58:58.115Z - success: protocol theme registered
+2018-07-28T03:58:58.115Z - success: protocol packages registered
+2018-07-28T03:58:58.116Z - success: protocol unpack registerred
+2018-07-28T03:58:58.116Z - success: protocol disable-commonjs registerred
+2018-07-28T03:58:58.232Z - normal: connected!
+2018-07-28T03:58:58.234Z - normal: Check project /Users/yangyu/Documents/GitHub/qqt
+2018-07-28T03:58:58.235Z - normal: Initializing Cocos2d
+2018-07-28T03:58:58.469Z - normal: Initializing Asset Database
+2018-07-28T03:58:58.508Z - success: protocol uuid registerred
+2018-07-28T03:58:58.508Z - success: protocol db registerred
+2018-07-28T03:58:58.508Z - success: protocol thumbnail registerred
+2018-07-28T03:58:58.509Z - normal: Loading editor/builtin packages
+2018-07-28T03:58:58.528Z - success: anysdk loaded
+2018-07-28T03:58:58.650Z - success: assets loaded
+2018-07-28T03:58:58.654Z - success: builder loaded
+2018-07-28T03:58:58.656Z - success: cocos-analytics loaded
+2018-07-28T03:58:58.661Z - success: console loaded
+2018-07-28T03:58:58.696Z - success: fb-instant-games loaded
+2018-07-28T03:58:58.700Z - success: hierarchy loaded
+2018-07-28T03:58:58.705Z - success: inspector loaded
+2018-07-28T03:58:58.707Z - success: keystore loaded
+2018-07-28T03:58:58.715Z - success: node-library loaded
+2018-07-28T03:58:58.718Z - success: package-asset loaded
+2018-07-28T03:58:58.720Z - success: preferences loaded
+2018-07-28T03:58:58.723Z - success: project-exporter loaded
+2018-07-28T03:58:58.739Z - success: project-importer loaded
+2018-07-28T03:58:58.743Z - success: project-settings loaded
+2018-07-28T03:58:58.746Z - success: ui-kit loaded
+2018-07-28T03:58:58.751Z - success: ui-grid loaded
+2018-07-28T03:58:58.756Z - success: scene loaded
+2018-07-28T03:58:58.758Z - success: sprite-editor loaded
+2018-07-28T03:58:58.762Z - success: store loaded
+2018-07-28T03:58:58.768Z - success: timeline loaded
+2018-07-28T03:58:58.768Z - normal: Loading builtin packages
+2018-07-28T03:58:58.773Z - success: asset-db-debugger loaded
+2018-07-28T03:58:58.774Z - success: color-picker loaded
+2018-07-28T03:58:58.778Z - success: package-manager loaded
+2018-07-28T03:58:58.783Z - success: sdkbox loaded
+2018-07-28T03:58:58.790Z - success: tester loaded
+2018-07-28T03:58:58.793Z - success: ui-kit-preview-extra loaded
+2018-07-28T03:58:58.798Z - success: ui-kit-preview loaded
+2018-07-28T03:58:58.801Z - success: ui-tree loaded
+2018-07-28T03:58:59.745Z - normal: Initializing project /Users/yangyu/Documents/GitHub/qqt
+2018-07-28T03:58:59.746Z - normal: Loading packages
+2018-07-28T03:58:59.751Z - normal: Watching packages
+2018-07-28T03:58:59.762Z - normal: Run Application
+2018-07-28T03:59:00.248Z - success: preview server running at http://localhost:7456
+2018-07-28T03:59:08.545Z - normal: 1.9.1
