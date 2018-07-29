@@ -1,53 +1,57 @@
-2018-07-28T03:58:57.279Z - normal: Load ~/.CocosCreator/settings.json
-2018-07-28T03:58:57.283Z - normal: checking language setting...
-2018-07-28T03:58:57.283Z - normal: Language: zh
-2018-07-28T03:58:58.114Z - success: protocol editor-framework registered
-2018-07-28T03:58:58.114Z - success: protocol app registered
-2018-07-28T03:58:58.115Z - success: protocol theme registered
-2018-07-28T03:58:58.115Z - success: protocol packages registered
-2018-07-28T03:58:58.116Z - success: protocol unpack registerred
-2018-07-28T03:58:58.116Z - success: protocol disable-commonjs registerred
-2018-07-28T03:58:58.232Z - normal: connected!
-2018-07-28T03:58:58.234Z - normal: Check project /Users/yangyu/Documents/GitHub/qqt
-2018-07-28T03:58:58.235Z - normal: Initializing Cocos2d
-2018-07-28T03:58:58.469Z - normal: Initializing Asset Database
-2018-07-28T03:58:58.508Z - success: protocol uuid registerred
-2018-07-28T03:58:58.508Z - success: protocol db registerred
-2018-07-28T03:58:58.508Z - success: protocol thumbnail registerred
-2018-07-28T03:58:58.509Z - normal: Loading editor/builtin packages
-2018-07-28T03:58:58.528Z - success: anysdk loaded
-2018-07-28T03:58:58.650Z - success: assets loaded
-2018-07-28T03:58:58.654Z - success: builder loaded
-2018-07-28T03:58:58.656Z - success: cocos-analytics loaded
-2018-07-28T03:58:58.661Z - success: console loaded
-2018-07-28T03:58:58.696Z - success: fb-instant-games loaded
-2018-07-28T03:58:58.700Z - success: hierarchy loaded
-2018-07-28T03:58:58.705Z - success: inspector loaded
-2018-07-28T03:58:58.707Z - success: keystore loaded
-2018-07-28T03:58:58.715Z - success: node-library loaded
-2018-07-28T03:58:58.718Z - success: package-asset loaded
-2018-07-28T03:58:58.720Z - success: preferences loaded
-2018-07-28T03:58:58.723Z - success: project-exporter loaded
-2018-07-28T03:58:58.739Z - success: project-importer loaded
-2018-07-28T03:58:58.743Z - success: project-settings loaded
-2018-07-28T03:58:58.746Z - success: ui-kit loaded
-2018-07-28T03:58:58.751Z - success: ui-grid loaded
-2018-07-28T03:58:58.756Z - success: scene loaded
-2018-07-28T03:58:58.758Z - success: sprite-editor loaded
-2018-07-28T03:58:58.762Z - success: store loaded
-2018-07-28T03:58:58.768Z - success: timeline loaded
-2018-07-28T03:58:58.768Z - normal: Loading builtin packages
-2018-07-28T03:58:58.773Z - success: asset-db-debugger loaded
-2018-07-28T03:58:58.774Z - success: color-picker loaded
-2018-07-28T03:58:58.778Z - success: package-manager loaded
-2018-07-28T03:58:58.783Z - success: sdkbox loaded
-2018-07-28T03:58:58.790Z - success: tester loaded
-2018-07-28T03:58:58.793Z - success: ui-kit-preview-extra loaded
-2018-07-28T03:58:58.798Z - success: ui-kit-preview loaded
-2018-07-28T03:58:58.801Z - success: ui-tree loaded
-2018-07-28T03:58:59.745Z - normal: Initializing project /Users/yangyu/Documents/GitHub/qqt
-2018-07-28T03:58:59.746Z - normal: Loading packages
-2018-07-28T03:58:59.751Z - normal: Watching packages
-2018-07-28T03:58:59.762Z - normal: Run Application
-2018-07-28T03:59:00.248Z - success: preview server running at http://localhost:7456
-2018-07-28T03:59:08.545Z - normal: 1.9.1
+2018-07-29T05:17:33.919Z - normal: Load ~/.CocosCreator/settings.json
+2018-07-29T05:17:33.923Z - normal: checking language setting...
+2018-07-29T05:17:33.923Z - normal: Language: zh
+2018-07-29T05:17:34.733Z - success: protocol editor-framework registered
+2018-07-29T05:17:34.733Z - success: protocol app registered
+2018-07-29T05:17:34.733Z - success: protocol theme registered
+2018-07-29T05:17:34.734Z - success: protocol packages registered
+2018-07-29T05:17:34.734Z - success: protocol unpack registerred
+2018-07-29T05:17:34.734Z - success: protocol disable-commonjs registerred
+2018-07-29T05:17:34.840Z - normal: connected!
+2018-07-29T05:17:34.843Z - normal: Check project /Users/yangyu/Documents/GitHub/qqt
+2018-07-29T05:17:34.854Z - normal: Initializing Cocos2d
+2018-07-29T05:17:35.083Z - normal: Initializing Asset Database
+2018-07-29T05:17:35.120Z - success: protocol uuid registerred
+2018-07-29T05:17:35.120Z - success: protocol db registerred
+2018-07-29T05:17:35.120Z - success: protocol thumbnail registerred
+2018-07-29T05:17:35.120Z - normal: Loading editor/builtin packages
+2018-07-29T05:17:35.144Z - success: anysdk loaded
+2018-07-29T05:17:35.270Z - success: assets loaded
+2018-07-29T05:17:35.274Z - success: builder loaded
+2018-07-29T05:17:35.277Z - success: cocos-analytics loaded
+2018-07-29T05:17:35.281Z - success: console loaded
+2018-07-29T05:17:35.313Z - success: fb-instant-games loaded
+2018-07-29T05:17:35.318Z - success: hierarchy loaded
+2018-07-29T05:17:35.323Z - success: inspector loaded
+2018-07-29T05:17:35.325Z - success: keystore loaded
+2018-07-29T05:17:35.333Z - success: node-library loaded
+2018-07-29T05:17:35.335Z - success: package-asset loaded
+2018-07-29T05:17:35.338Z - success: preferences loaded
+2018-07-29T05:17:35.341Z - success: project-exporter loaded
+2018-07-29T05:17:35.358Z - success: project-importer loaded
+2018-07-29T05:17:35.361Z - success: project-settings loaded
+2018-07-29T05:17:35.365Z - success: ui-kit loaded
+2018-07-29T05:17:35.370Z - success: ui-grid loaded
+2018-07-29T05:17:35.375Z - success: scene loaded
+2018-07-29T05:17:35.376Z - success: sprite-editor loaded
+2018-07-29T05:17:35.381Z - success: store loaded
+2018-07-29T05:17:35.387Z - success: timeline loaded
+2018-07-29T05:17:35.388Z - normal: Loading builtin packages
+2018-07-29T05:17:35.392Z - success: asset-db-debugger loaded
+2018-07-29T05:17:35.393Z - success: color-picker loaded
+2018-07-29T05:17:35.397Z - success: package-manager loaded
+2018-07-29T05:17:35.403Z - success: sdkbox loaded
+2018-07-29T05:17:35.409Z - success: tester loaded
+2018-07-29T05:17:35.413Z - success: ui-kit-preview-extra loaded
+2018-07-29T05:17:35.416Z - success: ui-kit-preview loaded
+2018-07-29T05:17:35.419Z - success: ui-tree loaded
+2018-07-29T05:17:36.450Z - normal: Initializing project /Users/yangyu/Documents/GitHub/qqt
+2018-07-29T05:17:36.452Z - normal: Loading packages
+2018-07-29T05:17:36.457Z - normal: Watching packages
+2018-07-29T05:17:36.470Z - normal: Run Application
+2018-07-29T05:17:37.025Z - success: preview server running at http://localhost:7456
+2018-07-29T05:17:41.848Z - normal: 1.9.1
+2018-07-29T05:35:53.077Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:24266
+2018-07-29T05:49:25.291Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:43167
+2018-07-29T05:49:25.295Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:43170
+2018-07-29T05:49:25.296Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:43173

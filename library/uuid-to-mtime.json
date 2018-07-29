@@ -385,7 +385,7 @@
     "relativePath": "prefab/enemy1.prefab"
   },
   "3b16474d-853e-4896-a5b3-be4507a2ff58": {
-    "asset": 1532497673182,
+    "asset": 1532751850672,
     "meta": 1532497673180,
     "relativePath": "scene"
   },
@@ -413,11 +413,6 @@
     "asset": 1532497673182,
     "meta": 1532606804406,
     "relativePath": "scene/win-scene.fire"
-  },
-  "432917a3-2cd6-4165-ae25-2e5d2d7538b0": {
-    "asset": 1532497673183,
-    "meta": 1532606804605,
-    "relativePath": "script/boom-control.js"
   },
   "c40e1f1b-18ca-43d1-9899-869f4a9838ba": {
     "asset": 1532497673185,
@@ -458,5 +453,25 @@
     "asset": 1532497673189,
     "meta": 1532606804890,
     "relativePath": "script/restart-script.js"
+  },
+  "432917a3-2cd6-4165-ae25-2e5d2d7538b0": {
+    "asset": 1532750369459,
+    "meta": 1532751435039,
+    "relativePath": "script/boom-control.js"
+  },
+  "e7731bcb-0a14-48bb-adb3-9df7ec8d597a": {
+    "asset": 1532843244272,
+    "meta": 1532843244300,
+    "relativePath": "scene/Start-scene.fire"
+  },
+  "0d46abe9-1731-438b-82fb-cfa3267f99ca": {
+    "asset": 1532842413273,
+    "meta": 1532842468389,
+    "relativePath": "script/start-script.js"
+  },
+  "9bb8049a-d401-4006-94ef-26f77afba9e6": {
+    "asset": 1532842876805,
+    "meta": 1532842876807,
+    "relativePath": "audio"
   }
 }

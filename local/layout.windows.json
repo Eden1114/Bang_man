@@ -103,14 +103,14 @@
   },
   "panels": {
     "preferences": {
-      "x": 257,
-      "y": 85,
+      "x": 387,
+      "y": 142,
       "width": 564,
       "height": 548
     },
     "project-settings": {
-      "x": 360,
-      "y": 128,
+      "x": 351,
+      "y": 134,
       "width": 584,
       "height": 548
     },
