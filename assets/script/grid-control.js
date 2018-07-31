@@ -1,5 +1,5 @@
 let gridWidth = 50;
-let getGrid = function(position){
+let getGrid = function(position) {
         //[fix] anchor should included # use round instead of floor
         return cc.v2(Math.round(position.x / gridWidth), Math.round(position.y / gridWidth))
     };

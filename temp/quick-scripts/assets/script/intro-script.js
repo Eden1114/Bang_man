@@ -1,5 +1,5 @@
-"use strict";
-cc._RF.push(module, '0d46avpFzFDi4L7z6Mmf5nK', 'intro-script');
+(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/script/intro-script.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
+cc._RF.push(module, '0d46avpFzFDi4L7z6Mmf5nK', 'intro-script', __filename);
 // script/intro-script.js
 
 'use strict';
@@ -38,3 +38,15 @@ cc.Class({
 });
 
 cc._RF.pop();
+        }
+        if (CC_EDITOR) {
+            __define(__module.exports, __require, __module);
+        }
+        else {
+            cc.registerModuleFunc(__filename, function () {
+                __define(__module.exports, __require, __module);
+            });
+        }
+        })();
+        //# sourceMappingURL=intro-script.js.map
+        

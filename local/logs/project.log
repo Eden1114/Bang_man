@@ -1,246 +1,54 @@
-2018-07-31T12:30:59.428Z - normal: Load ~/.CocosCreator/settings.json
-2018-07-31T12:30:59.431Z - normal: checking language setting...
-2018-07-31T12:30:59.431Z - normal: Language: zh
-2018-07-31T12:31:00.145Z - success: protocol editor-framework registered
-2018-07-31T12:31:00.145Z - success: protocol app registered
-2018-07-31T12:31:00.145Z - success: protocol theme registered
-2018-07-31T12:31:00.146Z - success: protocol packages registered
-2018-07-31T12:31:00.146Z - success: protocol unpack registerred
-2018-07-31T12:31:00.146Z - success: protocol disable-commonjs registerred
-2018-07-31T12:31:00.224Z - normal: connected!
-2018-07-31T12:31:00.227Z - normal: Check project /Users/yangyu/Documents/GitHub/Bang_man
-2018-07-31T12:31:00.237Z - normal: Initializing Cocos2d
-2018-07-31T12:31:00.471Z - normal: Initializing Asset Database
-2018-07-31T12:31:00.500Z - success: protocol uuid registerred
-2018-07-31T12:31:00.500Z - success: protocol db registerred
-2018-07-31T12:31:00.500Z - success: protocol thumbnail registerred
-2018-07-31T12:31:00.500Z - normal: Loading editor/builtin packages
-2018-07-31T12:31:00.520Z - success: anysdk loaded
-2018-07-31T12:31:00.633Z - success: assets loaded
-2018-07-31T12:31:00.636Z - success: builder loaded
-2018-07-31T12:31:00.638Z - success: cocos-analytics loaded
-2018-07-31T12:31:00.643Z - success: console loaded
-2018-07-31T12:31:00.673Z - success: fb-instant-games loaded
-2018-07-31T12:31:00.677Z - success: hierarchy loaded
-2018-07-31T12:31:00.681Z - success: inspector loaded
-2018-07-31T12:31:00.683Z - success: keystore loaded
-2018-07-31T12:31:00.691Z - success: node-library loaded
-2018-07-31T12:31:00.693Z - success: package-asset loaded
-2018-07-31T12:31:00.695Z - success: preferences loaded
-2018-07-31T12:31:00.698Z - success: project-exporter loaded
-2018-07-31T12:31:00.712Z - success: project-importer loaded
-2018-07-31T12:31:00.715Z - success: project-settings loaded
-2018-07-31T12:31:00.719Z - success: ui-kit loaded
-2018-07-31T12:31:00.723Z - success: ui-grid loaded
-2018-07-31T12:31:00.727Z - success: scene loaded
-2018-07-31T12:31:00.728Z - success: sprite-editor loaded
-2018-07-31T12:31:00.732Z - success: store loaded
-2018-07-31T12:31:00.738Z - success: timeline loaded
-2018-07-31T12:31:00.738Z - normal: Loading builtin packages
-2018-07-31T12:31:00.742Z - success: asset-db-debugger loaded
-2018-07-31T12:31:00.743Z - success: color-picker loaded
-2018-07-31T12:31:00.746Z - success: package-manager loaded
-2018-07-31T12:31:00.751Z - success: sdkbox loaded
-2018-07-31T12:31:00.756Z - success: tester loaded
-2018-07-31T12:31:00.760Z - success: ui-kit-preview-extra loaded
-2018-07-31T12:31:00.763Z - success: ui-kit-preview loaded
-2018-07-31T12:31:00.766Z - success: ui-tree loaded
-2018-07-31T12:31:01.740Z - normal: Initializing project /Users/yangyu/Documents/GitHub/Bang_man
-2018-07-31T12:31:01.743Z - normal: Loading packages
-2018-07-31T12:31:01.748Z - normal: Watching packages
-2018-07-31T12:31:01.758Z - normal: Run Application
-2018-07-31T12:31:01.961Z - warn: [db-task][init] Backup unused meta file: db://assets/audio.meta
-2018-07-31T12:31:05.868Z - success: preview server running at http://localhost:7456
-2018-07-31T12:31:10.116Z - normal: 1.9.1
-2018-07-31T12:36:30.703Z - normal: Start building with options : {
-  "androidStudio": true,
-  "apiLevel": "",
-  "appABIs": [],
-  "appKey": "",
-  "appSecret": "",
-  "buildPath": "/Users/yangyu/Documents/GitHub/Bang_man/build",
-  "debug": false,
-  "dest": "/Users/yangyu/Documents/GitHub/Bang_man/build/wechatgame",
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [],
-  "fb-instant-games": {},
-  "includeAnySDK": false,
-  "includeEruda": false,
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "jailbreakPlatform": false,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "oauthLoginServer": "",
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.gaoshiQQT",
-  "platform": "wechatgame",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "privateKey": "",
-  "qqplay": {
-    "REMOTE_SERVER_ROOT": "",
-    "orientation": "portrait"
-  },
-  "renderMode": "0",
-  "scenes": [
-    "3a33b382-bc9f-4e61-b494-5b9a9d4348b6",
-    "60fa5a5b-517f-411f-8dd0-acb2a1248993",
-    "e7731bcb-0a14-48bb-adb3-9df7ec8d597a",
-    "28eb49bf-ae2a-4cfa-b046-c6687b5b28da"
-  ],
-  "sourceMaps": false,
-  "startScene": "3a33b382-bc9f-4e61-b494-5b9a9d4348b6",
-  "template": "link",
-  "title": "BangMan",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "auto",
-  "wechatgame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "wx48f26b9e85cf7610",
-    "isSubdomain": false,
-    "orientation": "portrait",
-    "subContext": ""
-  },
-  "xxteaKey": "13daab38-a72d-48",
-  "zipCompressJs": true,
-  "project": "/Users/yangyu/Documents/GitHub/Bang_man",
-  "projectName": "BangMan",
-  "debugBuildWorker": false
-}
-2018-07-31T12:36:30.706Z - normal: Building /Users/yangyu/Documents/GitHub/Bang_man
-2018-07-31T12:36:30.707Z - normal: Destination /Users/yangyu/Documents/GitHub/Bang_man/build/wechatgame
-2018-07-31T12:36:31.042Z - normal: Delete /Users/yangyu/Documents/GitHub/Bang_man/build/wechatgame/**/*
-2018-07-31T12:36:32.980Z - normal: Compiled project javascript file successfully
-2018-07-31T12:36:32.980Z - normal: Start building assets
-2018-07-31T12:36:32.981Z - normal: Start spawn build-worker
-2018-07-31T12:36:33.652Z - normal: Finish spawn build-worker
-2018-07-31T12:36:33.653Z - normal: Start init build-worker
-2018-07-31T12:36:35.549Z - normal: 1.9.1
-2018-07-31T12:36:35.650Z - normal: Finish init build-worker
-2018-07-31T12:36:35.650Z - normal: Start build-assets in worker
-2018-07-31T12:36:36.099Z - normal: Finish build-assets in worker
-2018-07-31T12:36:36.103Z - normal: Finish building assets
-2018-07-31T12:36:36.115Z - normal: Start building raw assets
-2018-07-31T12:36:36.117Z - normal: Start building plugin scripts
-2018-07-31T12:36:36.183Z - normal: Finish building raw assets
-2018-07-31T12:36:36.193Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2018-07-31T12:36:36.316Z - normal: Built to "/Users/yangyu/Documents/GitHub/Bang_man/build/wechatgame" successfully
-2018-07-31T12:36:38.824Z - warn: 找不到微信开发程序版本信息路径 [/Applications/wechatwebdevtools.app/Contents/Resources/app.nw/package.json]。
-2018-07-31T12:36:38.824Z - warn: 微信开发程序版本过低，不能享用所有功能，请尽快升级。
-2018-07-31T12:36:39.298Z - normal: Initializing...
-
-2018-07-31T12:36:39.305Z - normal: idePortFile: /Users/yangyu/Library/Application Support/微信web开发者工具/Default/.ide
-
-2018-07-31T12:36:39.326Z - normal: starting ide...
-
-2018-07-31T12:36:42.496Z - normal: IDE server has started, listening on http://127.0.0.1:12819
-
-2018-07-31T12:36:42.501Z - normal: initialization finished
-
-2018-07-31T12:36:42.882Z - normal: open IDE success
-
-2018-07-31T12:36:56.190Z - normal: Start building with options : {
-  "androidStudio": true,
-  "apiLevel": "",
-  "appABIs": [],
-  "appKey": "",
-  "appSecret": "",
-  "buildPath": "/Users/yangyu/Documents/GitHub/Bang_man/build",
-  "debug": false,
-  "dest": "/Users/yangyu/Documents/GitHub/Bang_man/build/wechatgame",
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [],
-  "fb-instant-games": {},
-  "includeAnySDK": false,
-  "includeEruda": false,
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "jailbreakPlatform": false,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "oauthLoginServer": "",
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.gaoshiQQT",
-  "platform": "wechatgame",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "privateKey": "",
-  "qqplay": {
-    "REMOTE_SERVER_ROOT": "",
-    "orientation": "portrait"
-  },
-  "renderMode": "0",
-  "scenes": [
-    "3a33b382-bc9f-4e61-b494-5b9a9d4348b6",
-    "60fa5a5b-517f-411f-8dd0-acb2a1248993",
-    "e7731bcb-0a14-48bb-adb3-9df7ec8d597a",
-    "28eb49bf-ae2a-4cfa-b046-c6687b5b28da"
-  ],
-  "sourceMaps": false,
-  "startScene": "3a33b382-bc9f-4e61-b494-5b9a9d4348b6",
-  "template": "link",
-  "title": "BangMan",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "auto",
-  "wechatgame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "wx48f26b9e85cf7610",
-    "isSubdomain": false,
-    "orientation": "landscape",
-    "subContext": ""
-  },
-  "xxteaKey": "13daab38-a72d-48",
-  "zipCompressJs": true,
-  "project": "/Users/yangyu/Documents/GitHub/Bang_man",
-  "projectName": "BangMan",
-  "debugBuildWorker": false
-}
-2018-07-31T12:36:56.195Z - normal: Building /Users/yangyu/Documents/GitHub/Bang_man
-2018-07-31T12:36:56.195Z - normal: Destination /Users/yangyu/Documents/GitHub/Bang_man/build/wechatgame
-2018-07-31T12:36:56.196Z - normal: Delete /Users/yangyu/Documents/GitHub/Bang_man/build/wechatgame/**/*
-2018-07-31T12:36:58.167Z - normal: Compiled project javascript file successfully
-2018-07-31T12:36:58.168Z - normal: Start building assets
-2018-07-31T12:36:58.168Z - normal: Start spawn build-worker
-2018-07-31T12:36:58.868Z - normal: Finish spawn build-worker
-2018-07-31T12:36:58.868Z - normal: Start init build-worker
-2018-07-31T12:37:00.895Z - normal: 1.9.1
-2018-07-31T12:37:00.998Z - normal: Finish init build-worker
-2018-07-31T12:37:00.998Z - normal: Start build-assets in worker
-2018-07-31T12:37:01.443Z - normal: Finish build-assets in worker
-2018-07-31T12:37:01.448Z - normal: Finish building assets
-2018-07-31T12:37:01.457Z - normal: Start building raw assets
-2018-07-31T12:37:01.458Z - normal: Start building plugin scripts
-2018-07-31T12:37:01.517Z - normal: Finish building raw assets
-2018-07-31T12:37:01.525Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2018-07-31T12:37:01.701Z - normal: Built to "/Users/yangyu/Documents/GitHub/Bang_man/build/wechatgame" successfully
-2018-07-31T12:37:04.066Z - warn: 找不到微信开发程序版本信息路径 [/Applications/wechatwebdevtools.app/Contents/Resources/app.nw/package.json]。
-2018-07-31T12:37:04.067Z - warn: 微信开发程序版本过低，不能享用所有功能，请尽快升级。
-2018-07-31T12:37:04.418Z - normal: Initializing...
-
-2018-07-31T12:37:04.424Z - normal: idePortFile: /Users/yangyu/Library/Application Support/微信web开发者工具/Default/.ide
-
-2018-07-31T12:37:04.449Z - normal: IDE server has started, listening on http://127.0.0.1:12819
-
-2018-07-31T12:37:04.450Z - normal: initialization finished
-
-2018-07-31T12:37:04.668Z - normal: open IDE success
-
+2018-07-31T13:04:31.723Z - normal: Load ~/.CocosCreator/settings.json
+2018-07-31T13:04:31.726Z - normal: checking language setting...
+2018-07-31T13:04:31.727Z - normal: Language: zh
+2018-07-31T13:04:32.326Z - success: protocol editor-framework registered
+2018-07-31T13:04:32.327Z - success: protocol app registered
+2018-07-31T13:04:32.327Z - success: protocol theme registered
+2018-07-31T13:04:32.327Z - success: protocol packages registered
+2018-07-31T13:04:32.327Z - success: protocol unpack registerred
+2018-07-31T13:04:32.328Z - success: protocol disable-commonjs registerred
+2018-07-31T13:04:32.506Z - normal: connected!
+2018-07-31T13:04:32.508Z - normal: Check project /Users/yangyu/Documents/GitHub/Bang_man
+2018-07-31T13:04:32.510Z - normal: Initializing Cocos2d
+2018-07-31T13:04:32.673Z - normal: Initializing Asset Database
+2018-07-31T13:04:32.703Z - success: protocol uuid registerred
+2018-07-31T13:04:32.703Z - success: protocol db registerred
+2018-07-31T13:04:32.703Z - success: protocol thumbnail registerred
+2018-07-31T13:04:32.703Z - normal: Loading editor/builtin packages
+2018-07-31T13:04:32.722Z - success: anysdk loaded
+2018-07-31T13:04:32.835Z - success: assets loaded
+2018-07-31T13:04:32.838Z - success: builder loaded
+2018-07-31T13:04:32.840Z - success: cocos-analytics loaded
+2018-07-31T13:04:32.844Z - success: console loaded
+2018-07-31T13:04:32.875Z - success: fb-instant-games loaded
+2018-07-31T13:04:32.879Z - success: hierarchy loaded
+2018-07-31T13:04:32.883Z - success: inspector loaded
+2018-07-31T13:04:32.884Z - success: keystore loaded
+2018-07-31T13:04:32.892Z - success: node-library loaded
+2018-07-31T13:04:32.895Z - success: package-asset loaded
+2018-07-31T13:04:32.897Z - success: preferences loaded
+2018-07-31T13:04:32.899Z - success: project-exporter loaded
+2018-07-31T13:04:32.914Z - success: project-importer loaded
+2018-07-31T13:04:32.917Z - success: project-settings loaded
+2018-07-31T13:04:32.921Z - success: ui-kit loaded
+2018-07-31T13:04:32.925Z - success: ui-grid loaded
+2018-07-31T13:04:32.929Z - success: scene loaded
+2018-07-31T13:04:32.930Z - success: sprite-editor loaded
+2018-07-31T13:04:32.934Z - success: store loaded
+2018-07-31T13:04:32.939Z - success: timeline loaded
+2018-07-31T13:04:32.940Z - normal: Loading builtin packages
+2018-07-31T13:04:32.944Z - success: asset-db-debugger loaded
+2018-07-31T13:04:32.945Z - success: color-picker loaded
+2018-07-31T13:04:32.948Z - success: package-manager loaded
+2018-07-31T13:04:32.952Z - success: sdkbox loaded
+2018-07-31T13:04:32.957Z - success: tester loaded
+2018-07-31T13:04:32.961Z - success: ui-kit-preview-extra loaded
+2018-07-31T13:04:32.964Z - success: ui-kit-preview loaded
+2018-07-31T13:04:32.967Z - success: ui-tree loaded
+2018-07-31T13:04:33.915Z - normal: Initializing project /Users/yangyu/Documents/GitHub/Bang_man
+2018-07-31T13:04:33.917Z - normal: Loading packages
+2018-07-31T13:04:33.920Z - normal: Watching packages
+2018-07-31T13:04:33.930Z - normal: Run Application
+2018-07-31T13:04:34.419Z - success: preview server running at http://localhost:7456
+2018-07-31T13:04:38.543Z - normal: 1.9.1
+2018-07-31T13:09:02.593Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:5834

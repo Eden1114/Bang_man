@@ -1,9 +1,3 @@
-"use strict";
-cc._RF.push(module, '0d46avpFzFDi4L7z6Mmf5nK', 'intro-script');
-// script/intro-script.js
-
-'use strict';
-
 cc.Class({
     extends: cc.Component,
 
@@ -18,23 +12,21 @@ cc.Class({
         //    readonly: false,    // optional, default is false
         // },
         // ...
-        _sceneLoading: false
+        _sceneLoading: false,
     },
 
     // use this for initialization
-    onLoad: function onLoad() {
+    onLoad: function () {
         this.node.on('touchstart', function () {
             if (!this._sceneLoading) {
                 this._sceneLoading = true;
                 cc.director.loadScene('Intro-scene');
             }
         }, this);
-    }
+    },
 
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {
 
     // },
 });
-
-cc._RF.pop();

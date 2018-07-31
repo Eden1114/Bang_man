@@ -95,8 +95,9 @@ cc.Class({
             this.node.removeFromParent();
         }.bind(this), this.boomDuration);
     },
+
     update: function update() {
-        //然后在update判断是否到达了要爆炸的时间
+        //  然后在update判断是否到达了要爆炸的时间
         if (this._dropTimeStamp + this.restDuration * 1000 <= Date.now()) {
             //boom
             if (!this._booming) {
@@ -105,7 +106,6 @@ cc.Class({
             }
         }
     }
-
 });
 
 cc._RF.pop();

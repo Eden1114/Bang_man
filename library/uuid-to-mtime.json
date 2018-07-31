@@ -429,11 +429,6 @@
     "meta": 1533040265380,
     "relativePath": "script/enemy-generator.js"
   },
-  "ba0f9e70-3861-4e73-b116-6872cdf7e4a7": {
-    "asset": 1533039957655,
-    "meta": 1533040265474,
-    "relativePath": "script/grid-control.js"
-  },
   "a8a55851-638f-4ae2-b34a-0e4b775fb62a": {
     "asset": 1533039957655,
     "meta": 1533040265503,
@@ -454,19 +449,29 @@
     "meta": 1533040265546,
     "relativePath": "script/restart-script.js"
   },
-  "432917a3-2cd6-4165-ae25-2e5d2d7538b0": {
-    "asset": 1533039957652,
-    "meta": 1533040265308,
-    "relativePath": "script/boom-control.js"
-  },
   "e7731bcb-0a14-48bb-adb3-9df7ec8d597a": {
-    "asset": 1533040359715,
-    "meta": 1533040359724,
+    "asset": 1533043285721,
+    "meta": 1533043285726,
     "relativePath": "scene/Start-scene.fire"
   },
+  "befed7f1-4ad4-47f2-8c05-160390d7b8d8": {
+    "asset": 1533042958293,
+    "meta": 1533042958303,
+    "relativePath": "scene/Intro-scene.fire"
+  },
+  "432917a3-2cd6-4165-ae25-2e5d2d7538b0": {
+    "asset": 1533042931212,
+    "meta": 1533042936349,
+    "relativePath": "script/boom-control.js"
+  },
+  "ba0f9e70-3861-4e73-b116-6872cdf7e4a7": {
+    "asset": 1533042931212,
+    "meta": 1533042936350,
+    "relativePath": "script/grid-control.js"
+  },
   "0d46abe9-1731-438b-82fb-cfa3267f99ca": {
-    "asset": 1533039957658,
-    "meta": 1533040265547,
-    "relativePath": "script/start-script.js"
+    "asset": 1533043248189,
+    "meta": 1533043268405,
+    "relativePath": "script/intro-script.js"
   }
 }

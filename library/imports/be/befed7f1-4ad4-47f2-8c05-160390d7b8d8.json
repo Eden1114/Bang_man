@@ -1,12 +1,13 @@
 [
   {
     "__type__": "cc.SceneAsset",
-    "_name": "",
+    "_name": "Intro-scene",
     "_objFlags": 0,
     "_rawFiles": null,
     "scene": {
       "__id__": 1
-    }
+    },
+    "asyncLoadAssets": false
   },
   {
     "__type__": "cc.Scene",
@@ -21,7 +22,7 @@
     "_active": true,
     "_components": [],
     "_prefab": null,
-    "_id": "e7731bcb-0a14-48bb-adb3-9df7ec8d597a",
+    "_id": "befed7f1-4ad4-47f2-8c05-160390d7b8d8",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -60,20 +61,17 @@
       },
       {
         "__id__": 9
-      },
-      {
-        "__id__": 11
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 17
+        "__id__": 11
       }
     ],
     "_prefab": null,
-    "_id": "81crPZXRlF9qTo4vQ9M1jv",
+    "_id": "b2cFDtLElNeqKTmhgGbbPW",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -91,7 +89,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 960,
-      "height": 540
+      "height": 640
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -100,7 +98,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 480,
-      "y": 270
+      "y": 320
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -111,7 +109,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Introduce",
+    "_name": "Start",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2
@@ -135,7 +133,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "c82EKOSMxHtI83ol6T0dQL",
+    "_id": "0e0iTpO51GFJlXW6JkC7ji",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -152,8 +150,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 120,
-      "height": 60
+      "width": 130,
+      "height": 70
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -161,8 +159,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 0,
-      "y": -121
+      "x": 349,
+      "y": -208
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -187,7 +185,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "2evNThwQ1H664NL76Tjs1N",
+    "_id": "5aLDvSwFtNRKTQDX3zdEjX",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -205,7 +203,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 120,
-      "height": 60
+      "height": 70
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -232,14 +230,14 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_actualFontSize": 25,
-    "_fontSize": 25,
+    "_actualFontSize": 30,
+    "_fontSize": 30,
     "_lineHeight": 40,
     "_enableWrapText": false,
     "_N$file": null,
     "_isSystemFontUsed": true,
     "_spacingX": 0,
-    "_N$string": "游戏介绍",
+    "_N$string": "游戏开始",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -336,7 +334,7 @@
     }
   },
   {
-    "__type__": "0d46avpFzFDi4L7z6Mmf5nK",
+    "__type__": "d528582PatONZWwDgBdwAse",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -347,7 +345,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "game_name",
+    "_name": "Introduce",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2
@@ -361,7 +359,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "9fHHKJjiRF+J5/JWioi1Ln",
+    "_id": "75O+9jrwdBwovrfkEoQJNL",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -378,8 +376,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 500,
-      "height": 100
+      "width": 648,
+      "height": 300
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -387,273 +385,32 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 4,
-      "y": 125
+      "x": 0,
+      "y": 41
     },
     "_skewX": 0,
     "_skewY": 0,
     "_localZOrder": 0,
     "_globalZOrder": 0,
     "_opacityModifyRGB": false,
-    "groupIndex": 4
+    "groupIndex": 0
   },
   {
-    "__type__": "cc.Label",
+    "__type__": "cc.RichText",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 9
     },
     "_enabled": true,
-    "_useOriginalSize": false,
-    "_actualFontSize": 80,
-    "_fontSize": 80,
-    "_lineHeight": 40,
-    "_enableWrapText": true,
-    "_N$file": null,
-    "_isSystemFontUsed": true,
-    "_spacingX": 0,
-    "_N$string": "Bang Man",
-    "_N$horizontalAlign": 1,
-    "_N$verticalAlign": 1,
-    "_N$fontFamily": "Arial",
-    "_N$overflow": 2
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "Start",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 2
-    },
-    "_children": [
-      {
-        "__id__": 12
-      }
-    ],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 14
-      },
-      {
-        "__id__": 15
-      },
-      {
-        "__id__": 16
-      }
-    ],
-    "_prefab": null,
-    "_id": "29MPnMUD5ATY/OiQjRdcDE",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 120,
-      "height": 60
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": -24
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "Label",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 11
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 13
-      }
-    ],
-    "_prefab": null,
-    "_id": "d573j3DCdEqLchFjqTG1Hj",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 0,
-      "g": 0,
-      "b": 0,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 120,
-      "height": 60
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Label",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 12
-    },
-    "_enabled": true,
-    "_useOriginalSize": false,
-    "_actualFontSize": 25,
-    "_fontSize": 25,
-    "_lineHeight": 40,
-    "_enableWrapText": false,
-    "_N$file": null,
-    "_isSystemFontUsed": true,
-    "_spacingX": 0,
-    "_N$string": "开始游戏",
-    "_N$horizontalAlign": 1,
-    "_N$verticalAlign": 1,
-    "_N$fontFamily": "Arial",
-    "_N$overflow": 1
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 11
-    },
-    "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "f0048c10-f03e-4c97-b9d3-3506e1d58952"
-    },
-    "_type": 1,
-    "_sizeMode": 0,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": null
-  },
-  {
-    "__type__": "cc.Button",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 11
-    },
-    "_enabled": true,
-    "transition": 2,
-    "pressedColor": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "hoverColor": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "duration": 0.1,
-    "zoomScale": 1.2,
-    "clickEvents": [],
-    "_N$interactable": true,
-    "_N$enableAutoGrayEffect": false,
-    "_N$normalColor": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_N$disabledColor": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_N$normalSprite": {
-      "__uuid__": "f0048c10-f03e-4c97-b9d3-3506e1d58952"
-    },
-    "_N$pressedSprite": {
-      "__uuid__": "e9ec654c-97a2-4787-9325-e6a10375219a"
-    },
-    "pressedSprite": {
-      "__uuid__": "e9ec654c-97a2-4787-9325-e6a10375219a"
-    },
-    "_N$hoverSprite": {
-      "__uuid__": "e9ec654c-97a2-4787-9325-e6a10375219a"
-    },
-    "hoverSprite": {
-      "__uuid__": "e9ec654c-97a2-4787-9325-e6a10375219a"
-    },
-    "_N$disabledSprite": {
-      "__uuid__": "29158224-f8dd-4661-a796-1ffab537140e"
-    },
-    "_N$target": {
-      "__id__": 11
-    }
-  },
-  {
-    "__type__": "d528582PatONZWwDgBdwAse",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 11
-    },
-    "_enabled": true,
-    "_sceneLoading": false
+    "_N$string": "<color=#00ff00>你可以通过放置炸弹消灭地图上的敌人\n被自己的炸弹炸到或者接触到敌人会使你的生命值降低\n如果生命值被消耗为0，则游戏结束 </c><color=#0fffff>\n通过消灭敌人可以提高得分\n并会获得相应的能力提高\n快点击开始游戏吧！</color>",
+    "_N$horizontalAlign": 0,
+    "_N$fontSize": 27,
+    "_N$font": null,
+    "_N$maxWidth": 0,
+    "_N$lineHeight": 50,
+    "_N$imageAtlas": null,
+    "_N$handleTouchEvent": true
   },
   {
     "__type__": "cc.Canvas",
@@ -666,7 +423,7 @@
     "_designResolution": {
       "__type__": "cc.Size",
       "width": 960,
-      "height": 540
+      "height": 640
     },
     "_fitWidth": false,
     "_fitHeight": true
