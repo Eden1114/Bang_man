@@ -99,7 +99,8 @@
         "scene",
         "timeline"
       ]
-    }
+    },
+    "window-1533040471950": {}
   },
   "panels": {
     "preferences": {
@@ -115,8 +116,8 @@
       "height": 548
     },
     "builder": {
-      "x": 520,
-      "y": 137,
+      "x": 501,
+      "y": 32,
       "width": 500,
       "height": 722
     }
