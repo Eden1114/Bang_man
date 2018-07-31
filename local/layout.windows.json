@@ -5,7 +5,7 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 0,
+      "x": -5,
       "y": 22,
       "width": 1280,
       "height": 778,
@@ -18,23 +18,23 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 328.046875,
+                "height": 328,
                 "type": "panel",
-                "width": 206.0625
+                "width": 204
               },
               {
                 "active": 0,
                 "children": [
                   "assets"
                 ],
-                "height": 355.9375,
+                "height": 355.984375,
                 "type": "panel",
-                "width": 206.0625
+                "width": 204
               }
             ],
             "height": 687,
             "type": "dock-v",
-            "width": 206.0625
+            "width": 204
           },
           {
             "children": [
@@ -47,7 +47,7 @@
                     ],
                     "height": 458,
                     "type": "panel",
-                    "width": 547.46875
+                    "width": 549.984375
                   },
                   {
                     "active": 0,
@@ -61,7 +61,7 @@
                 ],
                 "height": 458,
                 "type": "dock-h",
-                "width": 754.46875
+                "width": 757
               },
               {
                 "active": 0,
@@ -71,12 +71,12 @@
                 ],
                 "height": 226,
                 "type": "panel",
-                "width": 754.46875
+                "width": 757
               }
             ],
             "height": 687,
             "type": "dock-v",
-            "width": 754.46875
+            "width": 757
           },
           {
             "active": 0,
@@ -85,7 +85,7 @@
             ],
             "height": 687,
             "type": "panel",
-            "width": 307.4375
+            "width": 307
           }
         ],
         "type": "dock-h"
@@ -99,8 +99,7 @@
         "scene",
         "timeline"
       ]
-    },
-    "window-1533040471950": {}
+    }
   },
   "panels": {
     "preferences": {
