@@ -52,3 +52,98 @@
 2018-07-31T13:04:34.419Z - success: preview server running at http://localhost:7456
 2018-07-31T13:04:38.543Z - normal: 1.9.1
 2018-07-31T13:09:02.593Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:5834
+2018-07-31T13:23:26.191Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/yangyu/Documents/GitHub/Bang_man/build",
+  "debug": true,
+  "dest": "/Users/yangyu/Documents/GitHub/Bang_man/build/wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.gaoshiQQT",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "e7731bcb-0a14-48bb-adb3-9df7ec8d597a",
+    "befed7f1-4ad4-47f2-8c05-160390d7b8d8",
+    "3a33b382-bc9f-4e61-b494-5b9a9d4348b6",
+    "60fa5a5b-517f-411f-8dd0-acb2a1248993",
+    "28eb49bf-ae2a-4cfa-b046-c6687b5b28da"
+  ],
+  "sourceMaps": false,
+  "startScene": "e7731bcb-0a14-48bb-adb3-9df7ec8d597a",
+  "template": "link",
+  "title": "BangMan",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx48f26b9e85cf7610",
+    "isSubdomain": false,
+    "orientation": "landscape",
+    "subContext": ""
+  },
+  "xxteaKey": "13daab38-a72d-48",
+  "zipCompressJs": true,
+  "project": "/Users/yangyu/Documents/GitHub/Bang_man",
+  "projectName": "BangMan",
+  "debugBuildWorker": false
+}
+2018-07-31T13:23:26.196Z - normal: Building /Users/yangyu/Documents/GitHub/Bang_man
+2018-07-31T13:23:26.197Z - normal: Destination /Users/yangyu/Documents/GitHub/Bang_man/build/wechatgame
+2018-07-31T13:23:26.558Z - normal: Delete /Users/yangyu/Documents/GitHub/Bang_man/build/wechatgame/**/*
+2018-07-31T13:23:29.267Z - normal: Compiled project javascript file successfully
+2018-07-31T13:23:29.268Z - normal: Start building assets
+2018-07-31T13:23:29.268Z - normal: Start spawn build-worker
+2018-07-31T13:23:30.476Z - normal: Finish spawn build-worker
+2018-07-31T13:23:30.478Z - normal: Start init build-worker
+2018-07-31T13:23:33.293Z - normal: 1.9.1
+2018-07-31T13:23:33.433Z - normal: Finish init build-worker
+2018-07-31T13:23:33.433Z - normal: Start build-assets in worker
+2018-07-31T13:23:34.429Z - normal: Finish build-assets in worker
+2018-07-31T13:23:34.435Z - normal: Finish building assets
+2018-07-31T13:23:34.453Z - normal: Start building raw assets
+2018-07-31T13:23:34.455Z - normal: Start building plugin scripts
+2018-07-31T13:23:34.550Z - normal: Finish building raw assets
+2018-07-31T13:23:34.563Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-07-31T13:23:34.774Z - normal: Built to "/Users/yangyu/Documents/GitHub/Bang_man/build/wechatgame" successfully
+2018-07-31T13:23:37.620Z - warn: 找不到微信开发程序版本信息路径 [/Applications/wechatwebdevtools.app/Contents/Resources/app.nw/package.json]。
+2018-07-31T13:23:37.620Z - warn: 微信开发程序版本过低，不能享用所有功能，请尽快升级。
+2018-07-31T13:23:38.313Z - normal: Initializing...
+
+2018-07-31T13:23:38.324Z - normal: idePortFile: /Users/yangyu/Library/Application Support/微信web开发者工具/Default/.ide
+
+2018-07-31T13:23:38.354Z - normal: IDE server has started, listening on http://127.0.0.1:12819
+initialization finished
+
+2018-07-31T13:23:38.610Z - normal: open IDE success
+

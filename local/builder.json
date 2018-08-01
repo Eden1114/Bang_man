@@ -3,7 +3,7 @@
   "apiLevel": "",
   "appABIs": [],
   "buildPath": "./build",
-  "debug": false,
+  "debug": true,
   "includeEruda": false,
   "keystoreAlias": "",
   "keystoreAliasPassword": "",
