@@ -32,9 +32,9 @@ cc.Class({
                 let enemy = cc.instantiate(this.enemyPrefabArray[enemyIdx]);
                 let randomPosition = null;
                 if(Math.random() > 0.5){
-                    randomPosition = cc.v2(Math.round(cc.random0To1() * 960),cc.random0To1() * 640);
+                    randomPosition = cc.v2(Math.round(cc.random0To1() * 950),cc.random0To1() * 530);
                 }else{
-                    randomPosition = cc.v2(cc.random0To1() * 960,Math.round(cc.random0To1()) * 640);
+                    randomPosition = cc.v2(cc.random0To1() * 950,Math.round(cc.random0To1()) * 530);
                 }
                 this.ground.addChild(enemy);
                 enemy.name = 'enemy' + Date.now();

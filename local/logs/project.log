@@ -1,54 +1,54 @@
-2018-07-31T13:04:31.723Z - normal: Load ~/.CocosCreator/settings.json
-2018-07-31T13:04:31.726Z - normal: checking language setting...
-2018-07-31T13:04:31.727Z - normal: Language: zh
-2018-07-31T13:04:32.326Z - success: protocol editor-framework registered
-2018-07-31T13:04:32.327Z - success: protocol app registered
-2018-07-31T13:04:32.327Z - success: protocol theme registered
-2018-07-31T13:04:32.327Z - success: protocol packages registered
-2018-07-31T13:04:32.327Z - success: protocol unpack registerred
-2018-07-31T13:04:32.328Z - success: protocol disable-commonjs registerred
-2018-07-31T13:04:32.506Z - normal: connected!
-2018-07-31T13:04:32.508Z - normal: Check project /Users/yangyu/Documents/GitHub/Bang_man
-2018-07-31T13:04:32.510Z - normal: Initializing Cocos2d
-2018-07-31T13:04:32.673Z - normal: Initializing Asset Database
-2018-07-31T13:04:32.703Z - success: protocol uuid registerred
-2018-07-31T13:04:32.703Z - success: protocol db registerred
-2018-07-31T13:04:32.703Z - success: protocol thumbnail registerred
-2018-07-31T13:04:32.703Z - normal: Loading editor/builtin packages
-2018-07-31T13:04:32.722Z - success: anysdk loaded
-2018-07-31T13:04:32.835Z - success: assets loaded
-2018-07-31T13:04:32.838Z - success: builder loaded
-2018-07-31T13:04:32.840Z - success: cocos-analytics loaded
-2018-07-31T13:04:32.844Z - success: console loaded
-2018-07-31T13:04:32.875Z - success: fb-instant-games loaded
-2018-07-31T13:04:32.879Z - success: hierarchy loaded
-2018-07-31T13:04:32.883Z - success: inspector loaded
-2018-07-31T13:04:32.884Z - success: keystore loaded
-2018-07-31T13:04:32.892Z - success: node-library loaded
-2018-07-31T13:04:32.895Z - success: package-asset loaded
-2018-07-31T13:04:32.897Z - success: preferences loaded
-2018-07-31T13:04:32.899Z - success: project-exporter loaded
-2018-07-31T13:04:32.914Z - success: project-importer loaded
-2018-07-31T13:04:32.917Z - success: project-settings loaded
-2018-07-31T13:04:32.921Z - success: ui-kit loaded
-2018-07-31T13:04:32.925Z - success: ui-grid loaded
-2018-07-31T13:04:32.929Z - success: scene loaded
-2018-07-31T13:04:32.930Z - success: sprite-editor loaded
-2018-07-31T13:04:32.934Z - success: store loaded
-2018-07-31T13:04:32.939Z - success: timeline loaded
-2018-07-31T13:04:32.940Z - normal: Loading builtin packages
-2018-07-31T13:04:32.944Z - success: asset-db-debugger loaded
-2018-07-31T13:04:32.945Z - success: color-picker loaded
-2018-07-31T13:04:32.948Z - success: package-manager loaded
-2018-07-31T13:04:32.952Z - success: sdkbox loaded
-2018-07-31T13:04:32.957Z - success: tester loaded
-2018-07-31T13:04:32.961Z - success: ui-kit-preview-extra loaded
-2018-07-31T13:04:32.964Z - success: ui-kit-preview loaded
-2018-07-31T13:04:32.967Z - success: ui-tree loaded
-2018-07-31T13:04:33.915Z - normal: Initializing project /Users/yangyu/Documents/GitHub/Bang_man
-2018-07-31T13:04:33.917Z - normal: Loading packages
-2018-07-31T13:04:33.920Z - normal: Watching packages
-2018-07-31T13:04:33.930Z - normal: Run Application
-2018-07-31T13:04:34.419Z - success: preview server running at http://localhost:7456
-2018-07-31T13:04:38.543Z - normal: 1.9.1
-2018-07-31T13:09:02.593Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:5834
+2018-08-01T10:55:00.314Z - normal: Load ~/.CocosCreator/settings.json
+2018-08-01T10:55:00.321Z - normal: checking language setting...
+2018-08-01T10:55:00.321Z - normal: Language: zh
+2018-08-01T10:55:02.217Z - success: protocol editor-framework registered
+2018-08-01T10:55:02.217Z - success: protocol app registered
+2018-08-01T10:55:02.217Z - success: protocol theme registered
+2018-08-01T10:55:02.217Z - success: protocol packages registered
+2018-08-01T10:55:02.217Z - success: protocol unpack registerred
+2018-08-01T10:55:02.218Z - success: protocol disable-commonjs registerred
+2018-08-01T10:55:02.312Z - normal: connected!
+2018-08-01T10:55:02.314Z - normal: Check project C:\Users\Dong  J\Documents\GitHub\Bang_man
+2018-08-01T10:55:02.317Z - normal: Initializing Cocos2d
+2018-08-01T10:55:02.554Z - normal: Initializing Asset Database
+2018-08-01T10:55:02.595Z - success: protocol uuid registerred
+2018-08-01T10:55:02.596Z - success: protocol db registerred
+2018-08-01T10:55:02.596Z - success: protocol thumbnail registerred
+2018-08-01T10:55:02.596Z - normal: Loading editor/builtin packages
+2018-08-01T10:55:02.618Z - success: anysdk loaded
+2018-08-01T10:55:02.763Z - success: assets loaded
+2018-08-01T10:55:02.766Z - success: builder loaded
+2018-08-01T10:55:02.769Z - success: cocos-analytics loaded
+2018-08-01T10:55:02.772Z - success: console loaded
+2018-08-01T10:55:02.812Z - success: fb-instant-games loaded
+2018-08-01T10:55:02.816Z - success: hierarchy loaded
+2018-08-01T10:55:02.820Z - success: inspector loaded
+2018-08-01T10:55:02.821Z - success: keystore loaded
+2018-08-01T10:55:02.825Z - success: node-library loaded
+2018-08-01T10:55:02.827Z - success: package-asset loaded
+2018-08-01T10:55:02.829Z - success: preferences loaded
+2018-08-01T10:55:02.831Z - success: project-exporter loaded
+2018-08-01T10:55:02.850Z - success: project-importer loaded
+2018-08-01T10:55:02.852Z - success: project-settings loaded
+2018-08-01T10:55:02.855Z - success: ui-kit loaded
+2018-08-01T10:55:02.857Z - success: ui-grid loaded
+2018-08-01T10:55:02.861Z - success: scene loaded
+2018-08-01T10:55:02.864Z - success: sprite-editor loaded
+2018-08-01T10:55:02.867Z - success: store loaded
+2018-08-01T10:55:02.872Z - success: timeline loaded
+2018-08-01T10:55:02.872Z - normal: Loading builtin packages
+2018-08-01T10:55:02.875Z - success: asset-db-debugger loaded
+2018-08-01T10:55:02.877Z - success: code-editor loaded
+2018-08-01T10:55:02.878Z - success: color-picker loaded
+2018-08-01T10:55:02.880Z - success: package-manager loaded
+2018-08-01T10:55:02.885Z - success: sdkbox loaded
+2018-08-01T10:55:02.888Z - success: tester loaded
+2018-08-01T10:55:02.890Z - success: ui-kit-preview-extra loaded
+2018-08-01T10:55:02.892Z - success: ui-kit-preview loaded
+2018-08-01T10:55:02.894Z - success: ui-tree loaded
+2018-08-01T10:55:04.184Z - normal: Initializing project C:\Users\Dong  J\Documents\GitHub\Bang_man
+2018-08-01T10:55:04.192Z - normal: Loading packages
+2018-08-01T10:55:04.198Z - normal: Watching packages
+2018-08-01T10:55:04.213Z - normal: Run Application
+2018-08-01T10:55:05.068Z - success: preview server running at http://localhost:7456
+2018-08-01T10:55:10.171Z - normal: 1.9.1
