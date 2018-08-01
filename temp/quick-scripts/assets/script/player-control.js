@@ -8,14 +8,14 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        hp: 100,
+        hp: 100, //当前剩余的血量
         realPlayer: false,
-        hurtValue: 5,
+        hurtValue: 5, //受伤害时，扣除的hp量
         _hpLabel: {
             get: function get() {
                 return this.node.getChildByName('hp-tips').getComponent(cc.Label);
             }
-        },
+        }, //用于放置血量的label
         _sceneLoading: false,
         hurtDurationOfEnemyTouch: 0.5, //just use in enemy
         _hurtTimeStamp: null,
@@ -24,19 +24,20 @@ cc.Class({
     },
 
     onLoad: function onLoad() {
+
+        //DEBUG
+        cc.director.getCollisionManager().enabled = true;
+        cc.director.getCollisionManager().enabledDebugDraw = true;
+        cc.director.getCollisionManager().enabledDrawBoundingBox = true;
+
         this._gridControl = require('grid-control');
         this._hurtTimeStamp = Date.now();
 
-        this._hpLabel.string = this.hp;
-        this.node.on('hurt-by-power', this.onHurt, this);
+        this._hpLabel.string = this.hp; //设置hp
+        this.node.on('hurt-by-power', this.onHurt, this); //收到伤害时执行的函数
         var manager = cc.director.getCollisionManager();
         manager.enabled = true;
     },
-
-    // onCollisionEnter: function(other,self){
-    //     console.log('enter',other.node.name);
-    //     //console.log(self.node.name);
-    // },
 
     onCollisionStay: function onCollisionStay(other, self) {
         if (this.realPlayer && other.node.group == 'player') {
@@ -60,11 +61,7 @@ cc.Class({
         }
     },
 
-    // onCollisionExit: function(other,self){
-    //     console.log('exit',other.node.name);
-    //     //console.log(self.node.name);
-    // },
-
+    // 受到伤害时
     onHurt: function onHurt() {
         this.hp -= this.hurtValue;
         if (this.hp <= 0) {

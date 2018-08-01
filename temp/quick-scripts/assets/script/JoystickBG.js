@@ -19,8 +19,8 @@ cc.Class({
         _joyCom: {
             default: null,
             displayName: 'joy Node'
-
         },
+
         _playerNode: {
             default: null,
             displayName: '被操作的目标Node'
@@ -29,7 +29,6 @@ cc.Class({
         _angle: {
             default: null,
             displayName: '当前触摸的角度'
-
         },
 
         _radian: {

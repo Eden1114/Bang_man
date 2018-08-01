@@ -2,42 +2,45 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        hp: 100,
+        hp: 100,    //当前剩余的血量
         realPlayer: false,
-        hurtValue: 5,
+        hurtValue: 5,   //受伤害时，扣除的hp量
         _hpLabel: {
-            get: function(){
+            get: function () {
                 return this.node.getChildByName('hp-tips').getComponent(cc.Label);
             }
-        },
+        },  //用于放置血量的label
         _sceneLoading: false,
-        hurtDurationOfEnemyTouch: 0.5,//just use in enemy
+        hurtDurationOfEnemyTouch: 0.5,  //just use in enemy
         _hurtTimeStamp: null,
         _enemyRemoving: false,
         _gridControl: null,
     },
 
     onLoad: function () {
+        
+        //DEBUG
+        cc.director.getCollisionManager().enabled = true;
+        cc.director.getCollisionManager().enabledDebugDraw = true;
+        cc.director.getCollisionManager().enabledDrawBoundingBox = true;
+
+
         this._gridControl = require('grid-control');
         this._hurtTimeStamp = Date.now();
 
-        this._hpLabel.string = this.hp;
-        this.node.on('hurt-by-power',this.onHurt,this);
+        this._hpLabel.string = this.hp; //设置hp
+        this.node.on('hurt-by-power', this.onHurt, this);   //收到伤害时执行的函数
         let manager = cc.director.getCollisionManager();
         manager.enabled = true;
-       
+
     },
 
-    // onCollisionEnter: function(other,self){
-    //     console.log('enter',other.node.name);
-    //     //console.log(self.node.name);
-    // },
 
-    onCollisionStay: function(other,self){
-        if(this.realPlayer && other.node.group == 'player'){
+    onCollisionStay: function (other, self) {
+        if (this.realPlayer && other.node.group == 'player') {
             //[add] check the grid
-            if(this.checkGridTouch(other.node,self.node)){
-                if(this._hurtTimeStamp + this.hurtDurationOfEnemyTouch * 1000 <= Date.now()){
+            if (this.checkGridTouch(other.node, self.node)) {
+                if (this._hurtTimeStamp + this.hurtDurationOfEnemyTouch * 1000 <= Date.now()) {
                     this.onHurt();
                     this._hurtTimeStamp = Date.now();
                 }
@@ -45,42 +48,39 @@ cc.Class({
         }
     },
 
-    checkGridTouch: function(otherNode,selfNode){
+    checkGridTouch: function (otherNode, selfNode) {
         let otherGrid = this._gridControl.getGrid(otherNode.position);
         let selfGrid = this._gridControl.getGrid(selfNode.position);
-        if(otherGrid.x == selfGrid.x && otherGrid.y == selfGrid.y){
+        if (otherGrid.x == selfGrid.x && otherGrid.y == selfGrid.y) {
             return true;
-        }else{
+        } else {
             return false;
         }
     },
 
-    // onCollisionExit: function(other,self){
-    //     console.log('exit',other.node.name);
-    //     //console.log(self.node.name);
-    // },
-
-    onHurt: function(){
+    
+    // 受到伤害时
+    onHurt: function () {
         this.hp -= this.hurtValue;
-        if(this.hp <= 0){
-            if(this.realPlayer){
+        if (this.hp <= 0) {
+            if (this.realPlayer) {
                 //game over
-                if(!this._sceneLoading){
+                if (!this._sceneLoading) {
                     this._sceneLoading = true;
                     cc.director.loadScene('game-over-scene');
                 }
-            }else{
+            } else {
                 //enemy removed
-                if(!this._enemyRemoving){
+                if (!this._enemyRemoving) {
                     this._enemyRemoving = true;
                     window.enemyNum--;
                     this.node.removeFromParent();
                 }
             }
-        }else{
+        } else {
             this._hpLabel.string = this.hp;
         }
-        
+
     }
 
 });
