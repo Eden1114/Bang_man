@@ -484,11 +484,6 @@
     "meta": 1533125971030,
     "relativePath": "script/grid-control.js"
   },
-  "a786ab95-fa10-4ce4-9da1-9ba86d32bd94": {
-    "asset": 1533125345720,
-    "meta": 1533125971080,
-    "relativePath": "script/JoystickBG.js"
-  },
   "a42f7aee-428f-4bd8-80d4-8fdac191ffc8": {
     "asset": 1533126628975,
     "meta": 1533126904648,
@@ -499,14 +494,19 @@
     "meta": 1533126904676,
     "relativePath": "script/Game.js"
   },
-  "a2a3ec77-4c3d-42af-b20e-a9b811a9be7e": {
-    "asset": 1533126232101,
-    "meta": 1533126904697,
-    "relativePath": "script/player-control.js"
-  },
   "d5285f36-3dab-4e35-95b0-0e005dc00b1e": {
     "asset": 1533126758227,
     "meta": 1533126904697,
     "relativePath": "script/restart-script.js"
+  },
+  "a786ab95-fa10-4ce4-9da1-9ba86d32bd94": {
+    "asset": 1533127110186,
+    "meta": 1533127477899,
+    "relativePath": "script/JoystickBG.js"
+  },
+  "a2a3ec77-4c3d-42af-b20e-a9b811a9be7e": {
+    "asset": 1533128173819,
+    "meta": 1533128180298,
+    "relativePath": "script/player-control.js"
   }
 }

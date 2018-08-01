@@ -18,24 +18,26 @@ cc.Class({
     },
 
     onLoad: function () {
-        
-        //DEBUG
-        cc.director.getCollisionManager().enabled = true;
-        cc.director.getCollisionManager().enabledDebugDraw = true;
-        cc.director.getCollisionManager().enabledDrawBoundingBox = true;
-
 
         this._gridControl = require('grid-control');
         this._hurtTimeStamp = Date.now();
 
         this._hpLabel.string = this.hp; //设置hp
         this.node.on('hurt-by-power', this.onHurt, this);   //收到伤害时执行的函数
+
+        //获取碰撞检测系统
         let manager = cc.director.getCollisionManager();
         manager.enabled = true;
-
+        //FOR DEGUB
+        manager.enabledDebugDraw = true;
+        manager.enabledDrawBoundingBox = true;
     },
 
-
+    /**
+     * 当碰撞保持的时候调用
+     * @param  {Collider} other 产生碰撞的另一个碰撞组件
+     * @param  {Collider} self  产生碰撞的自身的碰撞组件
+     */
     onCollisionStay: function (other, self) {
         if (this.realPlayer && other.node.group == 'player') {
             //[add] check the grid
@@ -48,9 +50,11 @@ cc.Class({
         }
     },
 
+    //判断两个spirte是否在一个格子内
     checkGridTouch: function (otherNode, selfNode) {
         let otherGrid = this._gridControl.getGrid(otherNode.position);
         let selfGrid = this._gridControl.getGrid(selfNode.position);
+
         if (otherGrid.x == selfGrid.x && otherGrid.y == selfGrid.y) {
             return true;
         } else {
@@ -58,7 +62,7 @@ cc.Class({
         }
     },
 
-    
+
     // 受到伤害时
     onHurt: function () {
         this.hp -= this.hurtValue;

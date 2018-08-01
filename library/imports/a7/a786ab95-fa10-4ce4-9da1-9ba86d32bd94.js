@@ -77,6 +77,7 @@ cc.Class({
                 break;
         }
     },
+
     //全方向移动
     _allDirectionsMove: function _allDirectionsMove() {
         this._playerNode.x += Math.cos(this._angle * (Math.PI / 180)) * this._speed;
