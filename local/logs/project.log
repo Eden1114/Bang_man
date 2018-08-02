@@ -51,3 +51,5 @@
 2018-08-01T12:01:02.924Z - normal: Run Application
 2018-08-01T12:01:05.082Z - success: preview server running at http://localhost:7456
 2018-08-01T12:01:09.815Z - normal: 1.9.1
+2018-08-01T13:59:41.946Z - success: Compiling task has been added to .vscode/tasks.json, please run "compile" task in VS Code to trigger compile in Cocos Creator.
+2018-08-01T13:59:59.481Z - success: Chrome debug setting has been updated to .vscode/launch.json, please install Debugger for Chrome VS Code extension to debug your project.

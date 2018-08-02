@@ -32,20 +32,22 @@ cc.Class({
 
 
         _speed: 0,          //实际速度
-        _speed1: 2,         //一段速度
-        _speed2: 4,         //二段速度
-        _opacity: 0,        //透明度
+        _speed1: 3,         //一段速度
+        _speed2: 5,         //二段速度
+        _opacity: 128,        //透明度
     },
 
 
     onLoad: function () {
+
         // joy下的Game组件
         this._joyCom = this.node.parent.getComponent('Game');
+        
         // game组件下的player节点
         this._playerNode = this._joyCom.sprite;
 
         if (this._joyCom.touchType == Common.TouchType.DEFAULT) {
-            //对圆圈的触摸监听
+            //对圆圈的触摸添加监听事件
             this._initTouchEvent();
         }
     },
@@ -53,15 +55,15 @@ cc.Class({
 
     //对圆圈的触摸监听
     _initTouchEvent: function () {
-        var self = this;
+        let self = this;
 
         self.node.on(cc.Node.EventType.TOUCH_START, this._touchStartEvent, self);
-
-        self.node.on(cc.Node.EventType.TOUCH_MOVE, this._touchMoveEvent, self);
+        self.node.on(cc.Node.EventType.TOUCH_MOVE , this._touchMoveEvent , self);
 
         // 触摸在圆圈内离开或在圆圈外离开后，摇杆归位，player速度为0
         self.node.on(cc.Node.EventType.TOUCH_END, this._touchEndEvent, self);
         self.node.on(cc.Node.EventType.TOUCH_CANCEL, this._touchEndEvent, self);
+
     },
 
     //更新移动目标
@@ -75,11 +77,64 @@ cc.Class({
         }
     },
 
+    /**
+     * onKeyDown: function (e) {
+        //在按下的时候设置方向标志位
+        switch (e.keyCode) {
+            case cc.KEY.up: { this._up = true; break }
+            case cc.KEY.down: { this._down = true; break }
+            case cc.KEY.left: { this._left = true; this.node.scaleX = -1; this.node.children[0].scaleX = -1; break }
+            case cc.KEY.right: { this._right = true; this.node.scaleX = 1; this.node.children[0].scaleX = 1; break }
+        }
+    },
+
+    onKeyUp: function (e) {
+        //在弹起的时候解除方向标志位
+        switch (e.keyCode) {
+            case cc.KEY.up: { this._up = false; break }
+            case cc.KEY.down: { this._down = false; break }
+            case cc.KEY.left: { this._left = false; break }
+            case cc.KEY.right: { this._right = false; break }
+        }
+    },
+     * 
+     * 
+     */
+
     
     //全方向移动
     _allDirectionsMove: function () {
-        this._playerNode.x += Math.cos(this._angle * (Math.PI / 180)) * this._speed;
-        this._playerNode.y += Math.sin(this._angle * (Math.PI / 180)) * this._speed;
+        let player = this._playerNode;
+        let move_control = player.getComponent('move-control');
+
+        let dx = Math.cos(this._angle * (Math.PI / 180)) * this._speed;
+        let dy = Math.sin(this._angle * (Math.PI / 180)) * this._speed;
+        
+        // move_control.onAllDirectionMove(dx, dy);
+
+        // console.log(this);
+        // console.log(this._playerNode);
+        //DEBUG
+        // let manager = cc.director.getCollisionManager();
+        // manager.enabled = true;
+        // if (!this.realPlayer) {
+        //     //计算玩家位置并不断追逐
+        //     let targetVector = cc.pSub(this._player.position, this.node.position);
+        //     let moveStep = cc.pMult(cc.pNormalize(targetVector), this.moveSpeed);
+        //     if (moveStep.x > 0 && !!this._rightBlock) { moveStep.x = 0; }
+        //     if (moveStep.x < 0 && !!this._leftBlock) { moveStep.x = 0; }
+        //     if (moveStep.y > 0 && !!this._upBlock) { moveStep.y = 0; }
+        //     if (moveStep.y < 0 && !!this._downBlock) { moveStep.y = 0; }
+        //     if (moveStep.x > 0) { this.node.scaleX = 1; this.node.children[0].scaleX = 1; }
+        //     if (moveStep.x < 0) { this.node.scaleX = -1; this.node.children[0].scaleX = -1; }
+        //     this.node.position = cc.pAdd(this.node.position, moveStep);
+        // } else {
+
+        //     if (this._left && !this._leftBlock) { this.node.x -= this.moveSpeed }
+        //     if (this._right && !this._rightBlock) { this.node.x += this.moveSpeed }
+        //     if (this._up && !this._upBlock) { this.node.y += this.moveSpeed }
+        //     if (this._down && !this._downBlock) { this.node.y -= this.moveSpeed }
+        // }
     },
 
     //计算两点间的距离并返回
@@ -110,7 +165,7 @@ cc.Class({
         //触摸点和遥控杆中心的距离
         var distance = this._getDistance(point, this.node.getPosition());
 
-        //如果半径
+        //如果半径小于radius，为一段速度，否则为二段速度
         if (distance < this._radius) {
             this._speed = this._speed1;
         }
@@ -119,6 +174,7 @@ cc.Class({
         }
     },
 
+    //开始触摸到屏幕
     _touchStartEvent: function (event) {
         // 获取触摸位置的世界坐标转换成圆圈的相对坐标（以圆圈的锚点为基准）
         var touchPos = this.node.convertToNodeSpaceAR(event.getLocation());
@@ -138,6 +194,7 @@ cc.Class({
         return false;
     },
 
+    //跟随移动
     _touchMoveEvent: function (event) {
         var touchPos = this.node.convertToNodeSpaceAR(event.getLocation());
         var distance = this._getDistance(touchPos, cc.p(0, 0));
@@ -161,6 +218,7 @@ cc.Class({
 
     },
 
+    //触摸结束
     _touchEndEvent: function () {
         this.dot.setPosition(this.node.getPosition());
         this._speed = 0;

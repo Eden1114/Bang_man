@@ -215,8 +215,8 @@
     "relativePath": "scene/game-over-scene.fire"
   },
   "3a33b382-bc9f-4e61-b494-5b9a9d4348b6": {
-    "asset": 1533124836524,
-    "meta": 1533124863721,
+    "asset": 1533131976767,
+    "meta": 1533131976805,
     "relativePath": "scene/main-scene.fire"
   },
   "1724a16b-df66-41dc-8e5d-1a9b8ff7c745": {
@@ -238,11 +238,6 @@
     "asset": 1533039957653,
     "meta": 1533124864399,
     "relativePath": "script/boom-map.js"
-  },
-  "a8a55851-638f-4ae2-b34a-0e4b775fb62a": {
-    "asset": 1533039957655,
-    "meta": 1533124864706,
-    "relativePath": "script/move-control.js"
   },
   "ed19301e-0e54-4462-af04-fd641b904150": {
     "asset": 1533039957657,
@@ -278,11 +273,6 @@
     "asset": 1533124836520,
     "meta": 1533124863663,
     "relativePath": "img/JoystickBG.png"
-  },
-  "9cf59797-3286-4af6-850d-d1ee3f3f4a87": {
-    "asset": 1533124836526,
-    "meta": 1533124864680,
-    "relativePath": "script/JoystickCommon.js"
   },
   "7108e63d-9a25-469c-b827-c00d7acef697": {
     "asset": 1533124836523,
@@ -499,14 +489,24 @@
     "meta": 1533126904697,
     "relativePath": "script/restart-script.js"
   },
-  "a786ab95-fa10-4ce4-9da1-9ba86d32bd94": {
-    "asset": 1533127110186,
-    "meta": 1533127477899,
-    "relativePath": "script/JoystickBG.js"
-  },
   "a2a3ec77-4c3d-42af-b20e-a9b811a9be7e": {
     "asset": 1533128173819,
     "meta": 1533128180298,
     "relativePath": "script/player-control.js"
+  },
+  "9cf59797-3286-4af6-850d-d1ee3f3f4a87": {
+    "asset": 1533129869612,
+    "meta": 1533130122801,
+    "relativePath": "script/JoystickCommon.js"
+  },
+  "a786ab95-fa10-4ce4-9da1-9ba86d32bd94": {
+    "asset": 1533132169525,
+    "meta": 1533132183545,
+    "relativePath": "script/JoystickBG.js"
+  },
+  "a8a55851-638f-4ae2-b34a-0e4b775fb62a": {
+    "asset": 1533132121344,
+    "meta": 1533132183546,
+    "relativePath": "script/move-control.js"
   }
 }

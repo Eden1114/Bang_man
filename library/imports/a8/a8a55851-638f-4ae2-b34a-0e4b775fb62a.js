@@ -4,6 +4,7 @@ cc._RF.push(module, 'a8a55hRY49K4rNKDkt3X7Yq', 'move-control');
 
 'use strict';
 
+/** 通过键盘↑↓←→和space控制移动和防止炸弹*/
 cc.Class({
     extends: cc.Component,
 
@@ -26,13 +27,13 @@ cc.Class({
 
     onLoad: function onLoad() {
         if (this.realPlayer) {
-            //移动很简单  首先开启按键的监听↓
+            //移动功能 开启按键的监听
             cc.systemEvent.on('keydown', this.onKeyDown, this);
             cc.systemEvent.on('keyup', this.onKeyUp, this);
         } else {
             this._player = this.node.parent.getChildByName('player');
         }
-        //碰撞也很简单 首先开始碰撞回调↓
+        //碰撞功能 先打开碰撞回调
         var manager = cc.director.getCollisionManager();
         manager.enabled = true;
     },
@@ -46,7 +47,7 @@ cc.Class({
 
     onCollisionExit: function onCollisionExit(other, self) {
         if (other.node.group == 'static-wall' || other.node.group == 'boom') {
-            //离开墙壁的时候，记得解除碰撞的标志位↓
+            //离开墙壁的时候，记得解除碰撞的标志位
             this.onLeaveWall(other, self);
         }
     },
@@ -162,7 +163,7 @@ cc.Class({
     },
 
     onKeyDown: function onKeyDown(e) {
-        //在按下的时候设置方向标志位↓
+        //在按下的时候设置方向标志位
         switch (e.keyCode) {
             case cc.KEY.up:
                 {
@@ -184,7 +185,7 @@ cc.Class({
     },
 
     onKeyUp: function onKeyUp(e) {
-        //在弹起的时候解除方向标志位↓
+        //在弹起的时候解除方向标志位
         switch (e.keyCode) {
             case cc.KEY.up:
                 {
@@ -204,6 +205,13 @@ cc.Class({
                 }
         }
     },
+
+    // onAllDirectionMove: function(dx, dy) {
+    //     this._player.x += dx;
+    //     this._player.y += dy;
+
+
+    // },
 
     update: function update(dt) {
         //然后根据标志位移动玩家
