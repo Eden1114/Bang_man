@@ -500,13 +500,13 @@
     "relativePath": "script/JoystickCommon.js"
   },
   "a786ab95-fa10-4ce4-9da1-9ba86d32bd94": {
-    "asset": 1533132169525,
-    "meta": 1533132183545,
+    "asset": 1533267056866,
+    "meta": 1533267076631,
     "relativePath": "script/JoystickBG.js"
   },
   "a8a55851-638f-4ae2-b34a-0e4b775fb62a": {
-    "asset": 1533132121344,
-    "meta": 1533132183546,
+    "asset": 1533267058794,
+    "meta": 1533267076632,
     "relativePath": "script/move-control.js"
   }
 }

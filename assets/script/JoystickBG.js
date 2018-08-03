@@ -35,6 +35,7 @@ cc.Class({
         _speed1: 3,         //一段速度
         _speed2: 5,         //二段速度
         _opacity: 128,        //透明度
+        _touchEnd:false
     },
 
 
@@ -70,7 +71,7 @@ cc.Class({
     update: function (dt) {
         switch (this._joyCom.directionType) {
             case Common.DirectionType.ALL:
-                this._allDirectionsMove();
+                this._directionsMove();
                 break;
             default:
                 break;
@@ -103,38 +104,17 @@ cc.Class({
 
     
     //全方向移动
-    _allDirectionsMove: function () {
+    //监听事件
+    _directionsMove: function () {
         let player = this._playerNode;
         let move_control = player.getComponent('move-control');
 
-        let dx = Math.cos(this._angle * (Math.PI / 180)) * this._speed;
-        let dy = Math.sin(this._angle * (Math.PI / 180)) * this._speed;
-        
-        // move_control.onAllDirectionMove(dx, dy);
-
-        // console.log(this);
-        // console.log(this._playerNode);
-        //DEBUG
-        // let manager = cc.director.getCollisionManager();
-        // manager.enabled = true;
-        // if (!this.realPlayer) {
-        //     //计算玩家位置并不断追逐
-        //     let targetVector = cc.pSub(this._player.position, this.node.position);
-        //     let moveStep = cc.pMult(cc.pNormalize(targetVector), this.moveSpeed);
-        //     if (moveStep.x > 0 && !!this._rightBlock) { moveStep.x = 0; }
-        //     if (moveStep.x < 0 && !!this._leftBlock) { moveStep.x = 0; }
-        //     if (moveStep.y > 0 && !!this._upBlock) { moveStep.y = 0; }
-        //     if (moveStep.y < 0 && !!this._downBlock) { moveStep.y = 0; }
-        //     if (moveStep.x > 0) { this.node.scaleX = 1; this.node.children[0].scaleX = 1; }
-        //     if (moveStep.x < 0) { this.node.scaleX = -1; this.node.children[0].scaleX = -1; }
-        //     this.node.position = cc.pAdd(this.node.position, moveStep);
-        // } else {
-
-        //     if (this._left && !this._leftBlock) { this.node.x -= this.moveSpeed }
-        //     if (this._right && !this._rightBlock) { this.node.x += this.moveSpeed }
-        //     if (this._up && !this._upBlock) { this.node.y += this.moveSpeed }
-        //     if (this._down && !this._downBlock) { this.node.y -= this.moveSpeed }
-        // }
+        // let dx = Math.cos(this._angle * (Math.PI / 180)) * this._speed;
+        // let dy = Math.sin(this._angle * (Math.PI / 180)) * this._speed;
+        let speed = this._speed;
+        let angle = this._angle;
+        let touchEnd = this._touchEnd;
+        move_control.onDirectionMove(touchEnd, speed, angle);
     },
 
     //计算两点间的距离并返回
@@ -154,7 +134,6 @@ cc.Class({
 
     //计算角度并返回
     _getAngle: function (point) {
-
         var pos = this.node.getPosition();
         this._angle = Math.atan2(point.y - pos.y, point.x - pos.x) * (180 / Math.PI);
         return this._angle;
@@ -176,6 +155,7 @@ cc.Class({
 
     //开始触摸到屏幕
     _touchStartEvent: function (event) {
+        this._touchEnd = true;
         // 获取触摸位置的世界坐标转换成圆圈的相对坐标（以圆圈的锚点为基准）
         var touchPos = this.node.convertToNodeSpaceAR(event.getLocation());
         //触摸点与圆圈中心的距离
@@ -196,6 +176,7 @@ cc.Class({
 
     //跟随移动
     _touchMoveEvent: function (event) {
+        this._touchEnd = true;
         var touchPos = this.node.convertToNodeSpaceAR(event.getLocation());
         var distance = this._getDistance(touchPos, cc.p(0, 0));
         var radius = this.node.width / 2;
@@ -222,5 +203,15 @@ cc.Class({
     _touchEndEvent: function () {
         this.dot.setPosition(this.node.getPosition());
         this._speed = 0;
+        this._touchEnd = false;
+        // let player = this._playerNode;
+        // let move_control = player.getComponent('move-control');
+
+        // // let dx = Math.cos(this._angle * (Math.PI / 180)) * this._speed;
+        // // let dy = Math.sin(this._angle * (Math.PI / 180)) * this._speed;
+        // let speed = this._speed;
+        // let angle = this._angle;
+
+        // move_control.onDirectionMove(true, speed, angle);
     },
 });

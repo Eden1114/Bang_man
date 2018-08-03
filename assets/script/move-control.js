@@ -131,12 +131,79 @@ cc.Class({
         }
     },
     
-    // onAllDirectionMove: function(dx, dy) {
-    //     this._player.x += dx;
-    //     this._player.y += dy;
-    
-    
-    // },
+    onDirectionMove: function(touch_end, speed, angle) {
+        // this._player.x += dx;
+        // this._player.y += dy;
+        console.log(speed, angle);
+        // this.moveSpeed = speed;
+        if(touch_end) {
+            this._up = false;
+            this._down = false;
+            this._left = false;
+            this._right = false;
+            return;
+        }
+        
+        else if(speed > 0) {
+            // this.speed = speed;
+
+            //右
+            if ((angle > -22.5 && angle <= 0) || (angle > 0 && angle <= 22.5)) {
+                this._right = true;
+                this.node.scaleX = 1;
+                this.node.children[0].scaleX = 1;
+            }
+
+            //右上
+            if (angle > 22.5 && angle <= 22.5 + 45) {
+                this._up = true;
+                this._right = true;
+                this.node.scaleX = 1;
+                this.node.children[0].scaleX = 1;
+            }
+
+            //上
+            if (angle > 22.5 + 45 && angle <= 22.5 + 90) {
+                this._up = true;
+            }
+
+            //左上
+            if (angle > 22.5 + 90 && angle <= 22.5 + 135) {
+                this._up = true;
+                this._left = true;
+                this.node.scaleX = -1;
+                this.node.children[0].scaleX = -1;
+            }
+
+            //左
+            if ((angle > 22.5 + 135 && angle <= 180) || (angle >= -180 && angle <= -180 + 22.5)) {
+                this._left = true;
+                this.node.scaleX = -1;
+                this.node.children[0].scaleX = -1;
+            }
+
+            //左下
+            if(angle > -180 +22.5 && angle <= -180 +22.5+ 45) {
+                this._down = true;
+                this.node.scaleX = -1;
+                this.node.children[0].scaleX = -1;
+            }
+
+            //下
+            if(angle > -135 + 22.5 && angle <= -90 + 22.5){
+                this._down = true;
+            }
+
+            //右下
+            if(angle > -90 +22.5 && angle <= -22.5) {
+                this._down = true;
+                this._right = true;
+                this.node.scaleX = 1;
+                this.node.children[0].scaleX = 1;
+            }
+        }
+        
+    },
 
     update: function (dt) {
         //然后根据标志位移动玩家
@@ -153,7 +220,6 @@ cc.Class({
             if (moveStep.x < 0) { this.node.scaleX = -1; this.node.children[0].scaleX = -1; }
             this.node.position = cc.pAdd(this.node.position, moveStep);
         } else {
-
             if (this._left && !this._leftBlock) { this.node.x -= this.moveSpeed }
             if (this._right && !this._rightBlock) { this.node.x += this.moveSpeed }
             if (this._up && !this._upBlock) { this.node.y += this.moveSpeed }
