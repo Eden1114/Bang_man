@@ -12,7 +12,12 @@ cc.Class({
         boomPrefabArray: [cc.Prefab],
         groundPanel: cc.Node,
         _gridControl: null,
-        _boomMap: null
+        _boomMap: null,
+        dropAudio: {
+            default: null,
+            url: cc.AudioClip
+        },
+        _button: cc.Node
     },
 
     onLoad: function onLoad() {
@@ -22,6 +27,7 @@ cc.Class({
 
     onKeyDown: function onKeyDown(e) {
         if (e.keyCode == cc.KEY.space) {
+            cc.audioEngine.playEffect(this.dropAudio, false);
             this.dropBoom();
         }
     },
@@ -40,8 +46,12 @@ cc.Class({
         boom.position = this._gridControl.getGridPosition(this.node.position);
         boom.getComponent('boom-control').init();
         boom.zIndex = this.node.zIndex - 1;
-    }
+    },
 
+    dropBoomByButton: function dropBoomByButton() {
+        cc.audioEngine.playEffect(this.dropAudio, false);
+        this.dropBoom();
+    }
 });
 
 cc._RF.pop();

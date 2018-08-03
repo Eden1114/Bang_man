@@ -7,6 +7,11 @@ cc.Class({
         groundPanel: cc.Node,
         _gridControl: null,
         _boomMap: null,
+        dropAudio: {
+            default: null,
+            url: cc.AudioClip
+        },
+        _button:cc.Node,
     },
 
     onLoad: function () {
@@ -17,11 +22,12 @@ cc.Class({
 
     onKeyDown: function(e){
         if(e.keyCode == cc.KEY.space){
+            cc.audioEngine.playEffect(this.dropAudio, false);
             this.dropBoom();
         }
     },
     //[fix] design the way the cal the grid position and drop the boom in the center of grid
-    dropBoom: function(){
+    dropBoom: function() {
         let grid = this._gridControl.getGrid(this.node.position);
         if(this._boomMap.isBoomSet(grid)){return;}
         this._boomMap.setBoom(grid);
@@ -34,5 +40,10 @@ cc.Class({
         boom.getComponent('boom-control').init();
         boom.zIndex = this.node.zIndex - 1;
     },
+
+    dropBoomByButton() {
+        cc.audioEngine.playEffect(this.dropAudio, false);
+        this.dropBoom();
+    }
 
 });

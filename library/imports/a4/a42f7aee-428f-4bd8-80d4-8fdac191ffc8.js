@@ -19,6 +19,8 @@ cc.Class({
 
     onLoad: function onLoad() {
         window.enemyNum = 0;
+        window.yourgrade = 0;
+        console.log(window.yourgrade);
         this.schedule(this.generator.bind(this), 1);
     },
 

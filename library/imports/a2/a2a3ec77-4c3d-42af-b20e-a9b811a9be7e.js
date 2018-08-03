@@ -16,6 +16,7 @@ cc.Class({
                 return this.node.getChildByName('hp-tips').getComponent(cc.Label);
             }
         }, //用于放置血量的label
+
         _sceneLoading: false,
         hurtDurationOfEnemyTouch: 0.5, //just use in enemy
         _hurtTimeStamp: null,
@@ -29,6 +30,7 @@ cc.Class({
         this._hurtTimeStamp = Date.now();
 
         this._hpLabel.string = this.hp; //设置hp
+
         this.node.on('hurt-by-power', this.onHurt, this); //收到伤害时执行的函数
 
         //获取碰撞检测系统
@@ -83,6 +85,7 @@ cc.Class({
                 if (!this._enemyRemoving) {
                     this._enemyRemoving = true;
                     window.enemyNum--;
+                    window.yourgrade += 100;
                     this.node.removeFromParent();
                 }
             }

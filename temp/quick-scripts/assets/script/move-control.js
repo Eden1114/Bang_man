@@ -14,6 +14,12 @@ cc.Class({
         _up: false,
         _down: false,
 
+        // _gradeLable:{
+        //     get: function () {
+        //         return this.node.getChildByName('grade').getComponent(cc.Label);
+        //     }
+        // },
+
         moveSpeed: 0,
 
         _leftBlock: 0,
@@ -26,6 +32,7 @@ cc.Class({
     },
 
     onLoad: function onLoad() {
+        // this._gradeLable.string='Grades:'+window.yourgrade;
         if (this.realPlayer) {
             //移动功能 开启按键的监听
             cc.systemEvent.on('keydown', this.onKeyDown, this);
@@ -209,7 +216,7 @@ cc.Class({
     onDirectionMove: function onDirectionMove(touch_end, speed, angle) {
         // this._player.x += dx;
         // this._player.y += dy;
-        console.log(touch_end, speed, angle);
+        //console.log(touch_end, speed, angle);
         // this.moveSpeed = speed;
         if (touch_end) {
             this._up = false;
@@ -282,6 +289,7 @@ cc.Class({
 
     update: function update(dt) {
 
+        // this._gradeLable.string='Grades:'+window.yourgrade;
         //然后根据标志位移动玩家
         //能够移动的判断标准是  想往某个方向移动并且那个方向畅通无阻 才能移动
         if (!this.realPlayer) {
