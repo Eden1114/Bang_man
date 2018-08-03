@@ -215,12 +215,12 @@
     "relativePath": "scene\\game-over-scene.fire"
   },
   "3a33b382-bc9f-4e61-b494-5b9a9d4348b6": {
-    "asset": 1533303122908,
-    "meta": 1533303122929,
+    "asset": 1533304524186,
+    "meta": 1533304524215,
     "relativePath": "scene\\main-scene.fire"
   },
   "1724a16b-df66-41dc-8e5d-1a9b8ff7c745": {
-    "asset": 1533288238083,
+    "asset": 1533302001548,
     "meta": 1533119625633,
     "relativePath": "script"
   },
@@ -300,7 +300,7 @@
     "relativePath": "script\\JoystickCommon.js"
   },
   "a7cb2a3f-9916-4adc-a766-3c917a95047b": {
-    "asset": 1533218399252,
+    "asset": 1533304499116,
     "meta": 1533215129741,
     "relativePath": "audio"
   },
@@ -313,11 +313,6 @@
     "asset": 1176175290000,
     "meta": 1533215857295,
     "relativePath": "audio\\drop.wav"
-  },
-  "fb3f5488-93ea-4a98-bc05-458b988d6660": {
-    "asset": 1533215046517,
-    "meta": 1533215146373,
-    "relativePath": "audio\\押尾コータロー (押尾光太郎) - TIME AFTER TIME.mp3"
   },
   "44080114-a67b-45d6-9e2f-334c5c2f442f": {
     "asset": 1533207490642,
@@ -573,5 +568,10 @@
     "asset": 1533303044171,
     "meta": 1533303064936,
     "relativePath": "script\\lableControl.js"
+  },
+  "735b0bc1-ea91-41c7-b54e-0590f725e3b3": {
+    "asset": 1533215046517,
+    "meta": 1533304499120,
+    "relativePath": "audio\\bg.mp3"
   }
 }
