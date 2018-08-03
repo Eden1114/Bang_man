@@ -1,0 +1,345 @@
+/*************************************************************************
+* ADOBE CONFIDENTIAL
+* ___________________
+*
+*  Copyright 2015 Adobe Systems Incorporated
+*  All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Adobe Systems Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Adobe Systems Incorporated and its
+* suppliers and are protected by all applicable intellectual property laws,
+* including trade secret and or copyright laws.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Adobe Systems Incorporated.
+**************************************************************************/
+@charset "UTF-8";
+
+body{
+    margin: 0 0 0 0;
+    font-family: adobe-clean, "Helvetica Neue", "Myriad Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #454545;
+    padding: 3px;
+}
+
+.close-dialog {
+    background-image: url(../images/icons.png);
+    cursor: pointer;
+    width: 25px;
+    height: 24px;
+    position: absolute;
+    right: 11px;
+    top: 11px;
+    border: solid 1px transparent !important;
+    background-color: transparent !important;
+    opacity: 0.6;
+}
+
+.status-dialog {
+    width: 259px;
+}
+.progress-area {
+    font-size: 13px;
+    line-height: 16px;
+    color: #454545;
+    background-color: #ffffff;
+    border-top: solid 1px #DFDFDF;
+    padding: 20px;
+}
+
+
+.convert-status {
+    display: block;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.convert-status-title {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    padding-top: 3px;
+}
+
+.convert-status-icon {
+    width:32px;
+    height: 40px;
+    margin: 0 6px 0 0;
+    background-image: url('../images/icons.png');
+    background-repeat: no-repeat;
+    background-position: -108px -8px;
+    display: inline-block;
+    float: left;
+}
+
+.icon-error {
+    background-position: -108px -8px;
+}
+
+.icon-success {
+    background-position: -108px -58px;
+}
+
+.convert-title, .convert-title2 {
+    display: inline-block;
+}
+
+.convert {
+    text-indent: 5px;
+    text-overflow: ellipsis;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 8px 0 0;
+}
+
+.convert-busy {
+    background-image: url('../images/progress.gif');
+    background-repeat: repeat-x;
+    height: 20px;
+    line-height: 22px;
+    font-size: 12px;
+    color: #454545;
+}
+
+.convert-button {
+    color: #2175c8;
+    border: solid 1px #2175c8;
+    padding: 4px 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.convert-button:hover {
+    border: solid 1px #cbcbcb;
+    background-color: #fbfbfb;
+    opacity: 1;
+}
+
+.acrobatMainDiv {
+    display: inline-block;
+    width: 255x;
+    margin: 0;
+    vertical-align: middle;
+    overflow: hidden;
+    background: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.65);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    opacity: 0;
+}
+
+.action-available {
+    background-image: url('../images/icons.png');
+    background-repeat: no-repeat;
+    background-position: -158px -13px;
+    height: 22px;
+    padding-left: 38px;
+    color: #454545;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 5px;
+    margin: 7px 0px 5px 16px;
+}
+
+.actions {
+    background-color: #ffffff;
+    border-top: solid 1px #DFDFDF;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.action {
+    display: block;
+}
+
+
+.horizontal-rule {
+    height: 1px;
+    width: 100%;
+    background-color: #DFDFDF;
+    margin: 10px auto 0;
+}
+
+.action-signout {
+    padding: 0;
+    text-align: center;
+    height: 40px;
+}
+
+.action-signout-message {
+    font-size: 12px;
+    color: #454545;
+    width: 155px;
+    float: left;
+    height: 100%;
+    border-right: solid 1px #cbcbcb;
+}
+
+.icon-user {
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin: 6px 5px 0 10px;
+    background-image: url('../images/icons.png');
+    background-repeat: no-repeat;
+    background-position: -13px -12px;
+}
+
+.displayName {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    width: 115px;
+    text-align: left;
+    overflow: hidden;
+}
+
+
+.choose, .default {
+    white-space: nowrap;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+dialog-header {
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.actions input[type=button] {
+    color: #454545;
+    border: solid 1px transparent;
+    border-radius: 2px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 38px;
+    line-height: 30px;
+    width: 225px;
+    text-align: left;
+    margin: 5px 15px 0;
+    padding-left: 38px;
+    font-size: 14px;
+    font-weight: 100;
+    background-image: url('../images/icons.png');
+    background-repeat: no-repeat;
+}
+
+input[type=button].close-dialog {
+    background-position: -64px -64px;
+}
+
+input[type=button].do_fillsign {
+    background-position: -157px -158px;
+}
+
+input[type=button].do_export {
+    background-position: -157px -111px;
+}
+
+input[type=button].do_send {
+    background-position: -157px -206px;
+}
+
+input[type=button].do_upload {
+    background-position: -157px -59px;
+}
+
+input[type=button].do_acrobat {
+    background-position: -158px -355px;
+}
+
+input[type=button].do_html_to_pdf {
+    background-position: -157px -408px;
+}
+
+input[type=button].do_html_add_to_pdf {
+    background-position: -157px -458px;
+}
+
+input[type=button].do-acro-prefs {
+    background-image:none;
+}
+
+input[type=button].do_set_open_pref {
+    background-position: -157px -508px;
+}
+
+input[type=button].do_set_open_pref.open-pdf-in-acrobat {
+    background-position: -157px -558px;
+}
+
+input[type=button].do_visit_acom {
+    background-position: -157px -308px;
+}
+
+input[type=button].do-acro-ui {
+    background-position: -157px -360px;
+}
+
+input[type=button]:hover {
+    border: solid 1px #cbcbcb;
+    background-color: #fbfbfb;
+    opacity: 1;
+}
+
+input[type=button]:active {
+    border: solid 1px #cbcbcb;
+    background-color: #f5f5f5;
+    opacity: 1;
+}
+
+input[type=button].ui-element {
+    color: #2175C8;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    line-height: 20px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+input[type=button].ui-element.sign-out {
+    margin: 7px auto;
+    width: 83px;
+    float: right;
+}
+
+.acrobat-com, .sign-out {
+    display:block;
+}
+
+.error {
+    font-size: 10pt;
+}
+
+.actions.show {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.special_question {
+    padding: 15px;
+}
+
+.api-option-container {
+    padding: 15px 20px 10px;
+}
+
+.api-option-container input[type=checkbox]{
+    margin-left: 9px;
+    margin-right: 12px;
+    float: left;
+}
+

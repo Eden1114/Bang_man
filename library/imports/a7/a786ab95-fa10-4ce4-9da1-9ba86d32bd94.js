@@ -90,7 +90,7 @@ cc.Class({
             case cc.KEY.right: { this._right = true; this.node.scaleX = 1; this.node.children[0].scaleX = 1; break }
         }
     },
-     onKeyUp: function (e) {
+      onKeyUp: function (e) {
         //在弹起的时候解除方向标志位
         switch (e.keyCode) {
             case cc.KEY.up: { this._up = false; break }
@@ -153,7 +153,7 @@ cc.Class({
 
     //开始触摸到屏幕
     _touchStartEvent: function _touchStartEvent(event) {
-        this._touchEnd = true;
+        this._touchEnd = false;
         // 获取触摸位置的世界坐标转换成圆圈的相对坐标（以圆圈的锚点为基准）
         var touchPos = this.node.convertToNodeSpaceAR(event.getLocation());
         //触摸点与圆圈中心的距离
@@ -174,7 +174,7 @@ cc.Class({
 
     //跟随移动
     _touchMoveEvent: function _touchMoveEvent(event) {
-        this._touchEnd = true;
+        this._touchEnd = false;
         var touchPos = this.node.convertToNodeSpaceAR(event.getLocation());
         var distance = this._getDistance(touchPos, cc.p(0, 0));
         var radius = this.node.width / 2;
@@ -199,7 +199,7 @@ cc.Class({
     _touchEndEvent: function _touchEndEvent() {
         this.dot.setPosition(this.node.getPosition());
         this._speed = 0;
-        this._touchEnd = false;
+        this._touchEnd = true;
         // let player = this._playerNode;
         // let move_control = player.getComponent('move-control');
 

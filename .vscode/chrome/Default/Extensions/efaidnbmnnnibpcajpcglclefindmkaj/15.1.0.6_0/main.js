@@ -1,0 +1,1 @@
+require.config({baseUrl:"lib",paths:{jquery:"libs/jquery-3.1.1.min"}}),require(["jquery","download-manager","./libs/zip","./libs/z-worker","./libs/deflate","./libs/FileSaver","./libs/AppMeasurement"]);

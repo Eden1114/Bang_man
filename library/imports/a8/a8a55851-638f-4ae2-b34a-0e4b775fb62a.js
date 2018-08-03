@@ -209,16 +209,19 @@ cc.Class({
     onDirectionMove: function onDirectionMove(touch_end, speed, angle) {
         // this._player.x += dx;
         // this._player.y += dy;
-        console.log(speed, angle);
+        console.log(touch_end, speed, angle);
         // this.moveSpeed = speed;
         if (touch_end) {
             this._up = false;
             this._down = false;
             this._left = false;
             this._right = false;
-            return;
         } else if (speed > 0) {
             // this.speed = speed;
+            this._up = false;
+            this._down = false;
+            this._left = false;
+            this._right = false;
 
             //右
             if (angle > -22.5 && angle <= 0 || angle > 0 && angle <= 22.5) {
@@ -278,6 +281,7 @@ cc.Class({
     },
 
     update: function update(dt) {
+
         //然后根据标志位移动玩家
         //能够移动的判断标准是  想往某个方向移动并且那个方向畅通无阻 才能移动
         if (!this.realPlayer) {

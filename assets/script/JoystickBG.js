@@ -155,7 +155,7 @@ cc.Class({
 
     //开始触摸到屏幕
     _touchStartEvent: function (event) {
-        this._touchEnd = true;
+        this._touchEnd = false;
         // 获取触摸位置的世界坐标转换成圆圈的相对坐标（以圆圈的锚点为基准）
         var touchPos = this.node.convertToNodeSpaceAR(event.getLocation());
         //触摸点与圆圈中心的距离
@@ -176,7 +176,7 @@ cc.Class({
 
     //跟随移动
     _touchMoveEvent: function (event) {
-        this._touchEnd = true;
+        this._touchEnd = false;
         var touchPos = this.node.convertToNodeSpaceAR(event.getLocation());
         var distance = this._getDistance(touchPos, cc.p(0, 0));
         var radius = this.node.width / 2;
@@ -203,7 +203,7 @@ cc.Class({
     _touchEndEvent: function () {
         this.dot.setPosition(this.node.getPosition());
         this._speed = 0;
-        this._touchEnd = false;
+        this._touchEnd = true;
         // let player = this._playerNode;
         // let move_control = player.getComponent('move-control');
 
