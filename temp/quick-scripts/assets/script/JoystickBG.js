@@ -39,7 +39,8 @@ cc.Class({
         _speed: 0, //实际速度
         _speed1: 3, //一段速度
         _speed2: 5, //二段速度
-        _opacity: 128 //透明度
+        _opacity: 128, //透明度
+        _touchEnd: false
     },
 
     onLoad: function onLoad() {
@@ -112,8 +113,8 @@ cc.Class({
         // let dy = Math.sin(this._angle * (Math.PI / 180)) * this._speed;
         var speed = this._speed;
         var angle = this._angle;
-
-        move_control.onDirectionMove(false, speed, angle);
+        var touchEnd = this._touchEnd;
+        move_control.onDirectionMove(touchEnd, speed, angle);
     },
 
     //计算两点间的距离并返回
@@ -152,6 +153,7 @@ cc.Class({
 
     //开始触摸到屏幕
     _touchStartEvent: function _touchStartEvent(event) {
+        this._touchEnd = true;
         // 获取触摸位置的世界坐标转换成圆圈的相对坐标（以圆圈的锚点为基准）
         var touchPos = this.node.convertToNodeSpaceAR(event.getLocation());
         //触摸点与圆圈中心的距离
@@ -172,6 +174,7 @@ cc.Class({
 
     //跟随移动
     _touchMoveEvent: function _touchMoveEvent(event) {
+        this._touchEnd = true;
         var touchPos = this.node.convertToNodeSpaceAR(event.getLocation());
         var distance = this._getDistance(touchPos, cc.p(0, 0));
         var radius = this.node.width / 2;
@@ -196,16 +199,16 @@ cc.Class({
     _touchEndEvent: function _touchEndEvent() {
         this.dot.setPosition(this.node.getPosition());
         this._speed = 0;
+        this._touchEnd = false;
+        // let player = this._playerNode;
+        // let move_control = player.getComponent('move-control');
 
-        var player = this._playerNode;
-        var move_control = player.getComponent('move-control');
+        // // let dx = Math.cos(this._angle * (Math.PI / 180)) * this._speed;
+        // // let dy = Math.sin(this._angle * (Math.PI / 180)) * this._speed;
+        // let speed = this._speed;
+        // let angle = this._angle;
 
-        // let dx = Math.cos(this._angle * (Math.PI / 180)) * this._speed;
-        // let dy = Math.sin(this._angle * (Math.PI / 180)) * this._speed;
-        var speed = this._speed;
-        var angle = this._angle;
-
-        move_control.onDirectionMove(true, speed, angle);
+        // move_control.onDirectionMove(true, speed, angle);
     }
 });
 
