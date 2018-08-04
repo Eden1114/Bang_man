@@ -41,9 +41,9 @@ cc.Class({
 
                     //enemy的生成位置
                     if (Math.random() > 0.5) {
-                        randomPosition = cc.v2(Math.round(cc.random0To1() * 950)+5, cc.random0To1() * 500 + 20);
+                        randomPosition = cc.v2(Math.round(cc.random0To1() * 950), cc.random0To1() * 500 );
                     } else {
-                        randomPosition = cc.v2(cc.random0To1() * 950 + 5, Math.round(cc.random0To1()) * 500 + 20);
+                        randomPosition = cc.v2(cc.random0To1() * 950, Math.round(cc.random0To1()) * 500 );
                     }
 
                     this.ground.addChild(enemy);

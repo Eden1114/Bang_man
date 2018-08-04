@@ -1,22 +1,22 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "圆",
-    "texture": "7108e63d-9a25-469c-b827-c00d7acef697",
+    "name": "圆_3",
+    "texture": "e200f980-47c6-4640-a73f-60af34e6c2ed",
     "atlas": "",
     "rect": [
       0,
       0,
-      2165,
-      2223
+      87,
+      89
     ],
     "offset": [
       0,
       0
     ],
     "originalSize": [
-      2165,
-      2223
+      87,
+      89
     ]
   }
 }

@@ -21,7 +21,7 @@ cc.Class({
     },
 
     onKeyDown: function(e){
-        if(e.keyCode == cc.KEY.space){
+        if(e.keyCode == cc.KEY.space) {
             cc.audioEngine.playEffect(this.dropAudio, false);
             this.dropBoom();
         }

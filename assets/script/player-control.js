@@ -31,8 +31,8 @@ cc.Class({
         let manager = cc.director.getCollisionManager();
         manager.enabled = true;
         //FOR DEGUB
-        manager.enabledDebugDraw = true;
-        manager.enabledDrawBoundingBox = true;
+        // manager.enabledDebugDraw = true;
+        // manager.enabledDrawBoundingBox = true;
     },
 
     /**
